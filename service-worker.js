@@ -1,8 +1,9 @@
 // Service Worker para PWA Semana Santa Jerez 2026
-const CACHE_NAME = 'ssjerez2026-v4';
+const CACHE_NAME = 'ssjerez2026-v5';
 const urlsToCache = [
   './',
   'index.html',
+  'eternidad.mp3',
   'manifest.json',
   'icon-192.png',
   'icon-512.png'
