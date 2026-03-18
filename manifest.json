@@ -1,7 +1,8 @@
 {
   "name": "Semana Santa Jerez 2026",
   "short_name": "SS Jerez 2026",
-  "start_url": "./index.html",
+  "start_url": ".",
+  "scope": ".",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#0f0720",
