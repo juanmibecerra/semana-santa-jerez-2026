@@ -1,0 +1,24 @@
+{
+  "name": "Semana Santa Jerez 2026",
+  "short_name": "SS Jerez 2026",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f0720",
+  "theme_color": "#1a0a2e",
+  "description": "App informativa de la Semana Santa de Jerez 2026. Horarios, itinerarios, hermandades y mapa interactivo.",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
