@@ -1385,7 +1385,7 @@
 <script>
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
-        navigator.serviceWorker.register('service-worker.js?v=11')
+        navigator.serviceWorker.register('service-worker.js?v=12')
             .then(function(reg) {
                 console.log('Service Worker registrado:', reg.scope);
                 reg.update();
@@ -1471,6 +1471,8 @@ function shufflePlaylist() {
 function iniciarAudio() {
     shufflePlaylist();
     var audio = document.getElementById('audioAmbiental');
+    audioTrackIdx = 0;
+    audio.src = audioPlaylist[0].src;
     audio.currentTime = audioPlaylist[0].start;
     audio.volume = 0.4;
     audio.play().catch(function(){});
