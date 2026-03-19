@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -1247,6 +1247,62 @@
         .card-historia-block{display:flex;align-items:center;gap:8px;margin-top:10px;padding:10px 12px;background:rgba(212,168,67,0.08);border:1px solid rgba(212,168,67,0.15);border-radius:10px;cursor:pointer;font-size:0.8rem;color:var(--text-secondary);transition:all 0.2s}
         .card-historia-block:hover{background:rgba(212,168,67,0.15);color:var(--text)}
         .card-historia-block>i:first-child{color:var(--accent);font-size:0.85rem;flex-shrink:0}
+
+        /* Dónde Ver */
+        .dv-header{text-align:center;padding:16px 16px 0}
+        .dv-header h2{font-family:'Cinzel',serif;color:var(--accent);font-size:1.15em;margin-bottom:4px}
+        .dv-header p{font-size:.82em;color:var(--text-secondary);margin-bottom:8px}
+        .dv-tabs{display:flex;gap:4px;overflow-x:auto;padding:8px 12px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+        .dv-tabs::-webkit-scrollbar{display:none}
+        .dv-tab{flex-shrink:0;padding:6px 14px;border-radius:20px;border:1px solid rgba(212,168,67,0.25);background:transparent;color:var(--text-secondary);font-size:.78rem;font-family:'Open Sans',sans-serif;cursor:pointer;transition:all .2s;white-space:nowrap}
+        .dv-tab.active{background:var(--accent);color:var(--bg);font-weight:600;border-color:var(--accent)}
+        .dv-content{padding:0 12px 90px}
+        .dv-day-title{font-family:'Cinzel',serif;color:var(--accent);font-size:.95em;margin:16px 0 6px;display:flex;align-items:center;gap:8px}
+        .dv-card{background:rgba(212,168,67,0.06);border:1px solid rgba(212,168,67,0.12);border-radius:12px;padding:12px;margin-bottom:10px}
+        .dv-card-top{display:flex;align-items:flex-start;gap:8px;margin-bottom:6px}
+        .dv-card-icon{width:32px;height:32px;border-radius:50%;background:rgba(212,168,67,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--accent);font-size:.8rem}
+        .dv-card h4{font-size:.88em;color:var(--text);margin:0;line-height:1.3}
+        .dv-card h4 small{display:block;font-weight:400;font-size:.82em;color:var(--accent);margin-top:2px}
+        .dv-card p{font-size:.82em;color:var(--text-secondary);line-height:1.6;margin:0 0 6px}
+        .dv-card .dv-tip{font-size:.78em;color:var(--accent-light);background:rgba(212,168,67,0.08);padding:6px 10px;border-radius:8px;margin-top:6px;display:flex;align-items:flex-start;gap:6px}
+        .dv-card .dv-tip i{margin-top:2px;flex-shrink:0}
+        .dv-star{color:#ffd700;margin-right:2px}
+        .dv-top10{background:rgba(212,168,67,0.1);border:1px solid rgba(212,168,67,0.2);border-radius:14px;padding:14px;margin-bottom:12px}
+        .dv-top10 h3{font-family:'Cinzel',serif;color:var(--accent);font-size:.92em;text-align:center;margin-bottom:10px}
+        .dv-top10-item{display:flex;gap:8px;align-items:flex-start;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04)}
+        .dv-top10-item:last-child{border-bottom:none}
+        .dv-top10-num{width:24px;height:24px;border-radius:50%;background:var(--accent);color:var(--bg);font-size:.72rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+        .dv-top10-text{font-size:.82em;color:var(--text);line-height:1.5}
+        .dv-top10-text small{display:block;color:var(--text-secondary);font-size:.9em}
+        .dv-section{margin-bottom:16px}
+        .dv-section-title{font-family:'Cinzel',serif;color:var(--accent);font-size:.88em;margin:14px 0 8px;cursor:pointer;display:flex;align-items:center;gap:6px}
+        .dv-section-title i.fa-chevron-down{transition:transform .2s;font-size:.7em}
+        .dv-section.collapsed .dv-section-body{display:none}
+        .dv-section.collapsed .dv-section-title i.fa-chevron-down{transform:rotate(-90deg)}
+        /* Glosario */
+        .glos-header{text-align:center;padding:16px 16px 0}
+        .glos-header h2{font-family:'Cinzel',serif;color:var(--accent);font-size:1.15em;margin-bottom:4px}
+        .glos-header p{font-size:.82em;color:var(--text-secondary);margin-bottom:8px}
+        .glos-search{width:calc(100% - 24px);margin:0 12px 8px;padding:10px 16px;border-radius:25px;border:1px solid rgba(212,168,67,0.3);background:rgba(255,255,255,0.05);color:var(--text);font-size:.9rem;outline:none;font-family:'Open Sans',sans-serif}
+        .glos-search:focus{border-color:var(--accent)}
+        .glos-content{padding:0 12px 90px}
+        .glos-letter{font-family:'Cinzel',serif;color:var(--accent);font-size:1.1em;margin:14px 0 6px;padding-bottom:4px;border-bottom:1px solid rgba(212,168,67,0.2)}
+        .glos-item{background:rgba(212,168,67,0.06);border:1px solid rgba(212,168,67,0.12);border-radius:10px;padding:10px 12px;margin-bottom:8px;cursor:pointer;transition:all .2s}
+        .glos-item.expanded{background:rgba(212,168,67,0.1);border-color:rgba(212,168,67,0.25)}
+        .glos-item-header{display:flex;align-items:center;justify-content:space-between}
+        .glos-item-term{font-weight:600;color:var(--text);font-size:.9em}
+        .glos-item-chevron{color:var(--accent);font-size:.7em;transition:transform .2s}
+        .glos-item.expanded .glos-item-chevron{transform:rotate(180deg)}
+        .glos-item-body{display:none;margin-top:8px;font-size:.84em;color:var(--text-secondary);line-height:1.7}
+        .glos-item.expanded .glos-item-body{display:block}
+        .glos-item-body .glos-jerez{display:inline-flex;align-items:center;gap:4px;background:rgba(212,168,67,0.15);padding:2px 8px;border-radius:10px;font-size:.85em;color:var(--accent);margin-top:4px}
+        .glos-count{font-size:.78em;color:var(--text-secondary);text-align:center;margin-bottom:8px}
+        /* Glosario tooltip */
+        .glos-tooltip-trigger{text-decoration:underline;text-decoration-style:dotted;text-decoration-color:rgba(212,168,67,0.4);text-underline-offset:2px;cursor:help}
+        .glos-tooltip{position:fixed;z-index:10001;background:rgba(26,10,46,0.96);border:1px solid var(--accent);border-radius:10px;padding:10px 14px;max-width:280px;font-size:.82rem;color:var(--text);line-height:1.6;box-shadow:0 6px 24px rgba(0,0,0,0.5);pointer-events:auto;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+        .glos-tooltip-term{font-weight:700;color:var(--accent);margin-bottom:4px;font-size:.88em}
+        .glos-tooltip-close{position:absolute;top:6px;right:8px;color:var(--text-secondary);cursor:pointer;font-size:.8em}
+
     </style>
 </head>
 <body>
@@ -1337,23 +1393,27 @@ if ('serviceWorker' in navigator) {
 </script>
 <script>
 (function(){
-    var KEY = 'ssjerez2026_visits';
     var BASE = 1247;
+    var NS = 'ssjerez2026';
+    var COUNTER_KEY = 'visitas';
+
     function updateCounter() {
         var el = document.getElementById('downloadCount');
         if (!el) return;
-        try {
-            var stored = parseInt(localStorage.getItem(KEY) || '0', 10);
-            var sessionKey = 'ssjerez2026_session';
-            if (!sessionStorage.getItem(sessionKey)) {
+
+        fetch('https://api.counterapi.dev/v1/' + NS + '/' + COUNTER_KEY + '/up')
+            .then(function(r) { return r.json(); })
+            .then(function(data) {
+                var total = BASE + (data.count || 0);
+                el.textContent = total.toLocaleString('es-ES');
+            })
+            .catch(function() {
+                var KEY = 'ssjerez2026_visits_local';
+                var stored = parseInt(localStorage.getItem(KEY) || '0', 10);
                 stored++;
                 localStorage.setItem(KEY, stored);
-                sessionStorage.setItem(sessionKey, '1');
-            }
-            el.textContent = (BASE + stored).toLocaleString('es-ES');
-        } catch(e) {
-            el.textContent = BASE.toLocaleString('es-ES');
-        }
+                el.textContent = (BASE + stored).toLocaleString('es-ES');
+            });
     }
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', updateCounter);
@@ -1362,8 +1422,8 @@ if ('serviceWorker' in navigator) {
     }
 })();
 </script>
-<!-- Audio ambiental - Eternidad (Rosario de Cádiz) -->
-<audio id="audioAmbiental" loop preload="auto">
+<!-- Audio ambiental - Playlist: Eternidad + Amarguras -->
+<audio id="audioAmbiental" preload="auto">
     <source src="eternidad.mp3" type="audio/mpeg">
 </audio>
 <div id="audioOverlay" style="position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(15,7,32,0.97);z-index:10000;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:20px;" onclick="iniciarAudio()">
@@ -1376,19 +1436,88 @@ if ('serviceWorker' in navigator) {
             <i class="fas fa-play" style="font-size:24px;color:#d4a843;margin-left:3px;"></i>
         </div>
         <p style="font-size:0.82rem;opacity:0.7;font-family:'Open Sans',sans-serif;">Pulsa para entrar</p>
-        <p style="font-size:0.68rem;opacity:0.45;margin-top:8px;font-family:'Open Sans',sans-serif;"><i class="fas fa-music"></i> Eternidad — Rosario de Cádiz</p>
+        <p style="font-size:0.68rem;opacity:0.45;margin-top:8px;font-family:'Open Sans',sans-serif;"><i class="fas fa-music"></i> 11 marchas y saetas</p>
 
     </div>
 </div>
 <script>
+var audioPlaylist = [
+    {src:'eternidad.mp3', label:'Eternidad — Rosario de Cádiz', start:11},
+    {src:'amarguras.mp3', label:'Amarguras — Font de Anta', start:0},
+    {src:'sueno-madruga.mp3', label:'El Sueño de una Madrugá — Sentencia', start:0},
+    {src:'sentencia.mp3', label:'A Jesús de la Sentencia (Jerez)', start:0},
+    {src:'eres-tu.mp3', label:'Eres tú mi Señor — Sentencia (Jerez)', start:0},
+    {src:'campanilleros.mp3', label:'Pasan los Campanilleros', start:0},
+    {src:'saeta.mp3', label:'La Saeta', start:0},
+    {src:'embrujo-triana.mp3', label:'El Embrujo de Triana', start:0},
+    {src:'saeta-alicia.mp3', label:'Saeta — Alicia Jiménez a la Virgen', start:0},
+    {src:'saeta-elu.mp3', label:'Saeta — Elu de Jerez al Cristo de la Expiración', start:0},
+    {src:'saeta-paquera.mp3', label:'Saeta — La Paquera de Jerez', start:0}
+];
+var audioTrackIdx = 0;
+
+function shufflePlaylist() {
+    for (var i = audioPlaylist.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var tmp = audioPlaylist[i];
+        audioPlaylist[i] = audioPlaylist[j];
+        audioPlaylist[j] = tmp;
+    }
+}
+
 function iniciarAudio() {
-    const audio = document.getElementById('audioAmbiental');
-    audio.currentTime = 11;
+    shufflePlaylist();
+    var audio = document.getElementById('audioAmbiental');
+    audio.currentTime = audioPlaylist[0].start;
     audio.volume = 0.4;
-    audio.play().catch(() => {});
+    audio.play().catch(function(){});
     document.getElementById('audioOverlay').style.display = 'none';
     document.getElementById('audioControl').style.display = 'flex';
+    updateTrackLabel();
+    // Pre-descargar todas las pistas en segundo plano para uso offline
+    preloadAllTracks();
 }
+
+function preloadAllTracks() {
+    var i = 0;
+    function next() {
+        if (i >= audioPlaylist.length) return;
+        var src = audioPlaylist[i].src;
+        i++;
+        fetch(src).then(function(){ next(); }).catch(function(){ next(); });
+    }
+    next();
+}
+
+function loadTrack(idx) {
+    var audio = document.getElementById('audioAmbiental');
+    var wasPlaying = !audio.paused;
+    audioTrackIdx = idx % audioPlaylist.length;
+    var track = audioPlaylist[audioTrackIdx];
+    audio.src = track.src;
+    audio.currentTime = track.start;
+    updateTrackLabel();
+    if (wasPlaying) audio.play().catch(function(){});
+}
+
+function updateTrackLabel() {
+    var lbl = document.getElementById('audioTrackLabel');
+    if (lbl) lbl.textContent = audioPlaylist[audioTrackIdx].label;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    var audio = document.getElementById('audioAmbiental');
+    audio.addEventListener('ended', function() {
+        if (audioTrackIdx < audioPlaylist.length - 1) {
+            loadTrack(audioTrackIdx + 1);
+            audio.play().catch(function(){});
+        } else {
+            shufflePlaylist();
+            loadTrack(0);
+            audio.play().catch(function(){});
+        }
+    });
+});
 function toggleAudio() {
     const audio = document.getElementById('audioAmbiental');
     const btn = document.getElementById('audioToggleBtn');
@@ -1424,7 +1553,9 @@ function toggleMute() {
         <i id="muteBtn" class="fas fa-volume-up"></i>
     </button>
     <input id="volSlider" type="range" min="0" max="100" value="40" aria-label="Volumen" oninput="var a=document.getElementById('audioAmbiental');a.volume=this.value/100;a.muted=false;document.getElementById('muteBtn').className=this.value==0?'fas fa-volume-mute':'fas fa-volume-up'" style="width:80px;accent-color:#d4a843;height:20px;cursor:pointer;flex-shrink:1;min-width:60px;-webkit-appearance:none;appearance:none;background:transparent;">
-    <span style="color:#d4a843;font-size:8px;opacity:0.45;font-family:'Open Sans',sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex-shrink:1;">Eternidad</span>
+    <button onclick="loadTrack((audioTrackIdx-1+audioPlaylist.length)%audioPlaylist.length)" title="Pista anterior" style="background:none;border:none;color:#d4a843;font-size:12px;cursor:pointer;width:28px;height:28px;display:flex;align-items:center;justify-content:center;flex-shrink:0;opacity:0.7;"><i class="fas fa-backward"></i></button>
+    <button onclick="loadTrack(audioTrackIdx+1)" title="Siguiente pista" style="background:none;border:none;color:#d4a843;font-size:12px;cursor:pointer;width:28px;height:28px;display:flex;align-items:center;justify-content:center;flex-shrink:0;opacity:0.7;"><i class="fas fa-forward"></i></button>
+    <span id="audioTrackLabel" style="color:#d4a843;font-size:11px;opacity:0.7;font-family:'Open Sans',sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex-shrink:1;font-weight:600;">Eternidad — Rosario de Cádiz</span>
 </div>
 <div class="app">
     <!-- Header -->
@@ -1489,6 +1620,7 @@ function toggleMute() {
 
         <!-- Streets View -->
         <div class="view-panel" id="viewCalles">
+            <div style="padding:8px 10px 0;"><input type="text" id="streetSearchInput" placeholder="Buscar calle..." style="width:100%;padding:10px 16px;border-radius:25px;border:1px solid rgba(212,168,67,0.3);background:rgba(255,255,255,0.05);color:var(--text);font-size:.9rem;outline:none;font-family:'Open Sans',sans-serif;box-sizing:border-box;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='rgba(212,168,67,0.3)'"></div>
             <div class="results-counter" id="streetsCounter"></div>
             <div class="streets-container" id="streetsContainer"></div>
         </div>
@@ -1658,7 +1790,7 @@ function toggleMute() {
                     <div class="historia-section-body"><div class="historia-section-inner">
                         <div class="historia-text">
                             <p>La <strong>Noche de Jesús</strong> o <strong>Madrugá</strong> es la jornada más solemne e intensa de la Semana Santa de Jerez. En la noche del Jueves al Viernes Santo, seis cofradías recorren las calles en estricto silencio y recogimiento: <strong class="hist-cofrade-link" onclick="navigateToHermandad('El Silencio (Santo Crucifijo)')">El Silencio (Santo Crucifijo)</strong>, <strong class="hist-cofrade-link" onclick="navigateToHermandad('Cinco Llagas')">Las Cinco Llagas</strong>, <strong class="hist-cofrade-link" onclick="navigateToHermandad('El Nazareno')">El Nazareno</strong>, <strong class="hist-cofrade-link" onclick="navigateToHermandad('Buena Muerte')">La Buena Muerte</strong>, <strong class="hist-cofrade-link" onclick="navigateToHermandad('La Yedra')">La Yedra</strong> y <strong class="hist-cofrade-link" onclick="navigateToHermandad('La Misión')">La Misión</strong>.</p>
-                            <p>Las cofradías del Silencio, Cinco Llagas y Buena Muerte realizan su estación en <strong>absoluto silencio</strong>, sin acompañamiento musical, creando una atmósfera de enorme intensidad espiritual. El paso del <strong class="hist-cofrade-link" onclick="navigateToHermandad('El Nazareno')">Nazareno</strong> por la calle Ancha es uno de los momentos más esperados del año, con miles de jerezanos siguiendo la secular tradición de «esperar al Nazareno».</p>
+                            <p>Las cofradías del Silencio, Cinco Llagas y Buena Muerte realizan su estación en <strong>absoluto silencio</strong>, sin acompañamiento musical, creando una atmósfera de enorme intensidad espiritual. El paso del <strong class="hist-cofrade-link" onclick="navigateToHermandad('El Nazareno')">Nazareno</strong> por calle Larga (Gallo Azul) es uno de los momentos más esperados del año, con miles de jerezanos siguiendo la secular tradición de «esperar al Nazareno».</p>
                         </div>
                     </div></div>
                 </div>
@@ -1706,7 +1838,7 @@ function toggleMute() {
                         <div class="historia-curiosidad"><div class="historia-curiosidad-icon"><i class="fas fa-female"></i></div><h4>La primera escultora</h4><p>Luisa Roldán «La Roldana» fue la primera mujer en ser nombrada escultora de cámara del rey de España.</p></div>
                         <div class="historia-curiosidad"><div class="historia-curiosidad-icon"><i class="fas fa-wine-bottle"></i></div><h4>Vino y cofradías</h4><p>Las grandes familias bodegueras del Marco de Jerez han sido históricamente las principales benefactoras de las hermandades.</p></div>
                         <div class="historia-curiosidad"><div class="historia-curiosidad-icon"><i class="fas fa-trophy"></i></div><h4>Interés Nacional</h4><p>La Semana Santa de Jerez fue declarada de Interés Turístico Nacional en 1993, reconocimiento a su valor artístico y cultural.</p></div>
-                        <div class="historia-curiosidad"><div class="historia-curiosidad-icon"><i class="fas fa-street-view"></i></div><h4>«Esperar al Nazareno»</h4><p>Miles de jerezanos mantienen la tradición de concentrarse en la calle Ancha para esperar el paso del Nazareno en la Madrugá.</p></div>
+                        <div class="historia-curiosidad"><div class="historia-curiosidad-icon"><i class="fas fa-street-view"></i></div><h4>«Esperar al Nazareno»</h4><p>Miles de jerezanos mantienen la tradición de concentrarse en calle Larga (Gallo Azul) para esperar el paso del Nazareno en la Madrugá.</p></div>
                     </div>
                 </div>
 
@@ -1787,6 +1919,28 @@ function toggleMute() {
                     <p style="color: var(--text-secondary); font-size: 0.85rem;"><i class="fas fa-tv"></i> Retransmisiones de <strong>Onda Jerez Radio Televisión</strong> &mdash; Semana Santa 2025</p>
                 </div>
             </div>
+        </div>
+
+
+        <!-- Dónde Ver View -->
+        <div class="view-panel" id="viewDondeVer">
+            <div class="dv-header">
+                <h2><i class="fas fa-binoculars"></i> Dónde Ver la Semana Santa</h2>
+                <p>Mejores puntos, momentos imprescindibles y consejos prácticos</p>
+            </div>
+            <div class="dv-tabs" id="dvTabs"></div>
+            <div class="dv-content" id="dvContent"></div>
+        </div>
+
+        <!-- Glosario View -->
+        <div class="view-panel" id="viewGlosario">
+            <div class="glos-header">
+                <h2><i class="fas fa-book-open"></i> Glosario Cofrade Jerezano</h2>
+                <p>Diccionario de la Semana Santa de Jerez de la Frontera</p>
+            </div>
+            <input type="text" class="glos-search" id="glosSearch" placeholder="Buscar término...">
+            <div class="glos-count" id="glosCount"></div>
+            <div class="glos-content" id="glosContent"></div>
         </div>
 
         <!-- Descubre View -->
@@ -2991,6 +3145,8 @@ document.addEventListener('DOMContentLoaded', () => {
     renderMusica();
     initMusicaTabs();
     initHistoria();
+    initDondeVer();
+    initGlosario();
     initModal();
     initCountdown();
     updateLiveBanner();
@@ -3145,6 +3301,11 @@ function initSearch() {
         renderStreets();
         if (map) updateMap();
     });
+
+    var streetInput = document.getElementById('streetSearchInput');
+    if (streetInput) {
+        streetInput.addEventListener('input', function() { renderStreets(); });
+    }
 }
 
 // ============================
@@ -3291,7 +3452,7 @@ function renderHermandades() {
                     '<button class="btn-ver-mapa" onclick="event.stopPropagation(); showOnMap(' + h.id + ')"><i class="fas fa-map-marked-alt"></i> Ver en mapa</button>' +
                     '<button class="btn-share" onclick="event.stopPropagation(); shareHermandad(' + h.id + ')"><i class="fas fa-share-alt"></i> Compartir</button>' +
                 '</div>' +
-                (DATOS_HISTORICOS[h.id] ? '<div class="card-historia-block" onclick="event.stopPropagation();goToHistoria(\'' + DATOS_HISTORICOS[h.id].seccion + '\')"><i class="fas fa-landmark"></i><span>' + DATOS_HISTORICOS[h.id].texto + '</span><i class="fas fa-arrow-right" style="margin-left:auto;font-size:0.7rem;opacity:0.5;"></i></div>' : '') +
+                (DATOS_HISTORICOS[h.id] ? '<div class="card-historia-block" onclick="event.stopPropagation();toggleHistoriaCard(this)"><i class="fas fa-book"></i><span style=\"font-weight:600;color:var(--accent);\">📖 Historia</span><i class="fas fa-chevron-down" style=\"margin-left:auto;font-size:0.65rem;opacity:0.5;transition:transform .2s;\"></i></div><div class="card-historia-body" style=\"display:none;padding:8px 12px 12px;font-size:0.78rem;line-height:1.65;color:var(--text-secondary);background:rgba(212,168,67,0.04);border:1px solid rgba(212,168,67,0.1);border-top:none;border-radius:0 0 10px 10px;margin-top:-2px;\">' + DATOS_HISTORICOS[h.id].texto + (DATOS_HISTORICOS[h.id].fundacion ? '<div style=\"margin-top:6px;font-size:0.9em;\"><strong style=\"color:var(--accent);\">Fundación:</strong> ' + DATOS_HISTORICOS[h.id].fundacion + '</div>' : '') + (DATOS_HISTORICOS[h.id].imaginero ? '<div style=\"margin-top:4px;font-size:0.9em;\"><strong style=\"color:var(--accent);\">Imaginero:</strong> ' + DATOS_HISTORICOS[h.id].imaginero + '</div>' : '') + (DATOS_HISTORICOS[h.id].dato ? '<div style=\"margin-top:4px;font-size:0.9em;font-style:italic;color:var(--accent-light);opacity:0.8;\">' + DATOS_HISTORICOS[h.id].dato + '</div>' : '') + '</div>' : '') +
               '</div>' +
             '</div>' +
         '</div>';
@@ -3323,8 +3484,11 @@ function renderStreets() {
     const streetMap = new Map();
     filtered.forEach(h => {
         const streets = parseItinerario(h.itinerario);
+        const seen = new Set();
         streets.forEach(s => {
             const key = s.replace(/^(Salida|Entrada) - /, '').trim();
+            if (seen.has(key)) return;
+            seen.add(key);
             if (!streetMap.has(key)) streetMap.set(key, []);
             streetMap.get(key).push({
                 hermandad: h.nombre,
@@ -3337,8 +3501,11 @@ function renderStreets() {
     });
 
     const streets = Array.from(streetMap.entries()).sort((a, b) => a[0].localeCompare(b[0], 'es'));
-    const filteredStreets = searchQuery
-        ? streets.filter(([name]) => name.toLowerCase().includes(searchQuery))
+    var streetQ = (document.getElementById('streetSearchInput') || {}).value;
+    streetQ = streetQ ? streetQ.toLowerCase().trim() : '';
+    var query = streetQ || searchQuery;
+    const filteredStreets = query
+        ? streets.filter(([name]) => name.toLowerCase().includes(query))
         : streets;
 
     counter.textContent = filteredStreets.length + ' calle' + (filteredStreets.length !== 1 ? 's' : '') + ' encontrada' + (filteredStreets.length !== 1 ? 's' : '');
@@ -3812,6 +3979,15 @@ function navigateToHermandad(nombre) {
 // ============================
 // NAVIGATE TO HISTORIA
 // ============================
+function toggleHistoriaCard(el) {
+    var body = el.nextElementSibling;
+    if (!body || !body.classList.contains('card-historia-body')) return;
+    var isOpen = body.style.display !== 'none';
+    body.style.display = isOpen ? 'none' : 'block';
+    var chev = el.querySelector('.fa-chevron-down');
+    if (chev) chev.style.transform = isOpen ? '' : 'rotate(180deg)';
+}
+
 function goToHistoria(section) {
     openDescubreSection('historia');
     if (section) {
@@ -3824,52 +4000,52 @@ function goToHistoria(section) {
 }
 
 const DATOS_HISTORICOS = {
-    1:{texto:"Procesiona desde Guadalcacín, reflejo de la expansión cofrade del s. XXI",seccion:"sigloXXI"},
-    2:{texto:"El Domingo de Ramos abre la Semana Santa con la entrada triunfal en Jerusalén",seccion:"tradiciones"},
-    3:{texto:"La Capilla de los Desamparados, sede canónica, data del s. XVII",seccion:"barroco"},
-    4:{texto:"Cofradía de reciente fundación, fruto de la expansión cofrade del s. XXI",seccion:"sigloXXI"},
-    5:{texto:"Única hermandad con caballos: la Centuria Romana acompaña el cortejo",seccion:"tradiciones"},
-    6:{texto:"Procesiona desde la Basílica del Carmen, joya del barroco jerezano",seccion:"barroco"},
-    7:{texto:"Una de las hermandades históricas del Domingo de Ramos jerezano",seccion:"origenes"},
-    8:{texto:"Hermandad del barrio de La Plata y San Telmo, nacida en el s. XXI",seccion:"sigloXXI"},
-    9:{texto:"Vinculada a la devoción mariana de Fátima en la barriada de Fátima",seccion:"tradiciones"},
-    10:{texto:"Procesiona en honor a la Virgen de la Candelaria por su barriada",seccion:"tradiciones"},
-    11:{texto:"Cofradía del Lunes Santo con gran arraigo en su barriada",seccion:"tradiciones"},
-    12:{texto:"Representa la Última Cena, iconografía única en la Semana Santa jerezana",seccion:"tradiciones"},
-    13:{texto:"Su Cristo de la Viga, tallado por José de Arce en 1637, es cumbre del barroco",seccion:"barroco"},
-    14:{texto:"Cofradía del Lunes Santo con importante patrimonio escultórico",seccion:"tradiciones"},
-    15:{texto:"Hermandad del Lunes Santo desde el entorno del centro histórico",seccion:"tradiciones"},
-    16:{texto:"Cofradía vinculada al barrio de San Rafael",seccion:"tradiciones"},
-    17:{texto:"Procesiona desde la zona de La Defensión, expansión cofrade periférica",seccion:"sigloXXI"},
-    18:{texto:"Hermandad nacida en el s. XXI, reflejo del crecimiento cofrade de Jerez",seccion:"sigloXXI"},
-    19:{texto:"Hermandad del Martes Santo con importante patrimonio escultórico",seccion:"imagineros"},
-    20:{texto:"Procesiona desde San Mateo, uno de los templos gótico-mudéjares de Jerez",seccion:"origenes"},
-    21:{texto:"Cofradía del Miércoles Santo con gran tradición en el centro histórico",seccion:"tradiciones"},
-    22:{texto:"Hermandad del Miércoles Santo desde el barrio de Santiago",seccion:"tradiciones"},
-    23:{texto:"Las Tres Caídas, una de las devociones pasionistas más populares de Jerez",seccion:"tradiciones"},
-    24:{texto:"La Amargura es una de las hermandades clásicas del Miércoles Santo",seccion:"tradiciones"},
-    25:{texto:"El Prendimiento representa el momento del beso de Judas en Getsemaní",seccion:"tradiciones"},
-    26:{texto:"Fundada c. 1440 en San Francisco, es la cofradía más antigua de Jerez",seccion:"origenes"},
-    27:{texto:"Hermandad del Jueves Santo ligada a la tradición redentorista",seccion:"tradiciones"},
-    28:{texto:"Representa la agonía de Cristo en el Huerto de Getsemaní",seccion:"tradiciones"},
-    29:{texto:"La Lanzada rememora el momento de la herida del costado de Cristo",seccion:"tradiciones"},
-    30:{texto:"Hermandad penitencial del Jueves Santo con honda tradición jerezana",seccion:"tradiciones"},
-    31:{texto:"Cofradía del Jueves Santo con profunda iconografía del dolor de María",seccion:"tradiciones"},
-    32:{texto:"Procesiona en absoluto silencio durante la Madrugá, una de las más antiguas",seccion:"madruga"},
-    33:{texto:"Cofradía de la Madrugá que realiza su estación en solemne silencio",seccion:"madruga"},
-    34:{texto:"Miles de jerezanos esperan su paso por la calle Ancha en la Madrugá",seccion:"madruga"},
-    35:{texto:"Procesiona en absoluto silencio en la noche más solemne de la Madrugá",seccion:"madruga"},
-    36:{texto:"Cofradía de la Madrugá, vinculada al barrio de Santiago",seccion:"madruga"},
-    37:{texto:"Cofradía de la Madrugá de reciente fundación, expansión del s. XXI",seccion:"madruga"},
-    38:{texto:"Procesiona el Viernes Santo con importante patrimonio mariano",seccion:"tradiciones"},
-    39:{texto:"La Exaltación es una de las hermandades históricas del Viernes Santo",seccion:"tradiciones"},
-    40:{texto:"El Cristo de la Expiración, momento cumbre del Viernes Santo jerezano",seccion:"tradiciones"},
-    41:{texto:"Una de las cofradías más antiguas (s. XV), cierra solemnemente el Viernes Santo",seccion:"origenes"},
-    42:{texto:"Procesiona durante el Sábado Santo con su Cristo de las Almas",seccion:"tradiciones"},
-    43:{texto:"La Sagrada Mortaja representa el descendimiento y la piedad",seccion:"tradiciones"},
-    44:{texto:"La BCT del Cristo de la Caridad – Santa Marta es la banda titular de Jerez",seccion:"musicahist"},
-    45:{texto:"Hermandad penitencial del Sábado Santo con gran tradición jerezana",seccion:"tradiciones"},
-    46:{texto:"Cierra la Semana Santa con la alegría de la Resurrección el Domingo",seccion:"tradiciones"}
+    1:{texto:"Fundada en 2002 en Guadalcacín, realiza la estación de penitencia más larga de España: más de 15 horas y 20 km desde su pedanía hasta el centro de Jerez. Sus imágenes son obra de Navarro Arteaga. En 2026 puede ser su último Sábado de Pasión, ya que se estudia su incorporación al Domingo de Ramos.",fundacion:"2002 (erigida canónicamente el 31 de marzo de 2012)",imaginero:"José Antonio Navarro Arteaga (Señor, 2008; Virgen, 2014; figuras secundarias, 2014-2019)",dato:"Es la hermandad con el recorrido más largo de toda la Semana Santa española, partiendo desde la pedanía de Guadalcacín y recorriendo más de 20 km ida y vuelta hasta el centro de Jerez. Su estación de penitencia dura más de 15 horas."},
+    2:{texto:"Fundada en 1949 por antiguos alumnos de La Salle, abre siempre la Semana Santa de Jerez. Cristo Rey es obra de Chaveli Gibert (1950), quien la donó como hermano fundador. La Virgen de la Estrella, de Sebastián Santos Rojas (1962), es copia idealizada de una hija del escultor.",fundacion:"1949 (erección canónica 1952)",imaginero:"Tomás Chaveli Gibert (Cristo Rey, 1950, donada por el escultor como hermano fundador); Sebastián Santos Rojas (Virgen de la Estrella, 1962)",dato:"Fundada por antiguos alumnos de los colegios de La Salle. La Virgen de la Estrella es copia idealizada de una hija religiosa de Sebastián Santos Rojas. Siempre abre la Semana Santa de Jerez."},
+    3:{texto:"El Cristo de la Coronación de Espinas, del último tercio del siglo XVII, es una de las tallas más antiguas en procesionar en Jerez. La Virgen de la Paz es obra de Rivera García (1950). Reorganizada en el siglo XX, sale de la Capilla de los Desamparados.",fundacion:"Siglos XVII-XVIII (Cristo de la Coronación, último tercio del s. XVII, de Pedro Grass y Elías Mer); reorganizada en el siglo XX",imaginero:"Pedro Grass y Elías Mer (Cristo, s. XVII); José Rivera García (Virgen de la Paz, 1950); Luis Álvarez Duarte (figuras secundarias, 1975)",dato:"El Cristo de la Coronación de Espinas es una de las tallas más antiguas que procesionan en la Semana Santa de Jerez."},
+    4:{texto:"Fundada en 2002, es una de las más jóvenes de Jerez. Representa a Jesús oyendo las negaciones de San Pedro. Todas sus imágenes son de Dubé Herdugo. En 2017 realizó por primera vez estación de penitencia a la Catedral. En 2026 estrena itinerario nuevo.",fundacion:"2002 (erigida canónicamente 2012; primera estación de penitencia a la Catedral: Domingo de Ramos de 2017)",imaginero:"Antonio Jesús Dubé Herdugo (Señor de la Pasión, 2002; Angustia de María, 2010; figuras secundarias 2014-2017)",dato:"Una de las hermandades más jóvenes de Jerez. Representa a Jesús cautivo escuchando las negaciones de San Pedro. En 2026 estrena un itinerario completamente nuevo por Paseo de las Delicias."},
+    5:{texto:"Fundada en 1952 por el gremio de transportistas, con San Cristóbal como patrono. Es la única cofradía jerezana con Centuria Romana a caballo. El Señor del Consuelo es una imagen del s. XVII atribuida a la escuela genovesa. La Virgen de la Misericordia es de Sebastián Santos (1956).",fundacion:"1952 (primeros estatutos: 19 de octubre de 1954; primera salida: Domingo de Ramos de 1955)",imaginero:"Anónimo s. XVII/XVIII, atribuido a Pedro Roldán o escuela genovesa (Jesús del Consuelo); Sebastián Santos Rojas (Madre de Dios de la Misericordia, 1956); Francisco y Lutgardo Pinto Berraquero (paso de misterio, 1956)",dato:"Fundada por el gremio de transportistas jerezanos. Es la única hermandad de Jerez que incluye una Centuria Romana a caballo en su cortejo. Patrono: San Cristóbal Mártir. El paso de misterio calza hasta 50 costaleros."},
+    6:{texto:"Fundada en 1963, su sede es la Ermita de Guía, en los extramuros de la ciudad. El Cristo del Perdón es obra de Pinto Berraquero (1962). La Virgen del Perpetuo Socorro es una talla del siglo XVII, una de las más antiguas que procesionan en Domingo de Ramos.",fundacion:"1963",imaginero:"Francisco Pinto Berraquero (Cristo del Perdón, 1962); Diego Manuel Felices de Molina (Virgen del Perpetuo Socorro, finales s. XVII)",dato:"La Virgen del Perpetuo Socorro data del siglo XVII. La hermandad sale de la Ermita de Guía, en los extramuros de la ciudad."},
+    7:{texto:"Hermandad antigua reorganizada en el siglo XX. Procesiona un solo paso con la Virgen de las Angustias, acompañada solo por una escolanía que entona el «Stabat Mater». Su recogida por la Alameda Vieja es uno de los momentos más emotivos del Domingo de Ramos.",fundacion:"Antigua (reorganizada en el s. XX; imagen de la Virgen: rostro tallado por Alfonso Gaabino, 1925; nuevo cuerpo por Ramón Chaveli, 1940)",imaginero:"Alfonso Gaabino (rostro, 1925); Ramón Chaveli Carreres (cuerpo, 1940)",dato:"Procesiona un solo paso con la imagen de la Virgen de las Angustias, acompañada únicamente por una escolanía que interpreta el «Stabat Mater». Es una de las procesiones más austeras y emotivas del Domingo de Ramos."},
+    8:{texto:"Hermandad joven del barrio de La Plata y San Telmo. El Cristo de la Sed (Rodríguez Picón, 2010) y la Virgen del Amparo (2014) son imágenes de nueva factura. Sale a las 14:20, la más tempranera del Lunes Santo.",fundacion:"Erigida canónicamente en 2008 (primera salida procesional: 2012 aprox.)",imaginero:"Elías Rodríguez Picón (Cristo de la Sed, 2010; Virgen del Amparo, 2014)",dato:"Hermandad del barrio de La Plata y San Telmo, una de las más recientes de Jerez."},
+    9:{texto:"Representó a Jerez en la JMJ de Madrid 2011 ante el Papa Benedicto XVI. El Señor de las Misericordias actual es de Pinto Berraquero (1977). Cofradía muy arraigada en su barrio de La Plata.",fundacion:"Mediados del s. XX (primitiva imagen de Castillo Lastrucci, 1957; nueva imagen de Pinto Berraquero, 1977)",imaginero:"Antonio Castillo Lastrucci (primitivo Señor de las Misericordias, 1957); Francisco Pinto Berraquero (nuevo Señor, 1977); Manuel Prieto Fernández (Virgen de la Candelaria, 1969)",dato:"Representó a Jerez en la JMJ de Madrid 2011 ante el Papa Benedicto XVI con el paso del Señor de las Misericordias."},
+    10:{texto:"El monumental paso de la Sagrada Cena es obra maestra de Luis Ortega Bru (Señor, 1967; apóstoles, 1969-1975), completado por los Hermanos Ortega Alonso (2003). Ver caminar esta cofradía por su barrio de San Marcos es una delicia.",fundacion:"Mediados del s. XX",imaginero:"Luis Ortega Bru (Señor de la Cena, 1967; apóstoles, 1969-1975); Hermanos Ortega Alonso (apóstoles restantes, 2003)",dato:"El paso de misterio de la Última Cena es la obra cumbre de Ortega Bru en Jerez. Procesiona desde el emblemático barrio de San Marcos, con su iglesia mudéjar."},
+    11:{texto:"Fundada hacia 1440, es la hermandad más antigua de Jerez y una de las más antiguas de España. Su Cruz de Guía se porta sobre andas al estilo medieval, caso único en el país. El Cristo de la Esperanza (s. XVII) se atribuye al círculo de Juan de Mesa.",fundacion:"Hacia 1440 (una de las más antiguas de Jerez y de España); reorganizada en el s. XX",imaginero:"Anónimo, círculo de Juan de Mesa (Cristo de la Esperanza, primera mitad s. XVII); Antonio Eslava Rubio (Virgen de las Lágrimas, 1969)",dato:"Fundada hacia 1440, es la cofradía más antigua de Jerez. Su Cruz de Guía es portada sobre andas al estilo medieval, caso único en toda España. El Cristo de la Esperanza se atribuye al círculo de Juan de Mesa."},
+    12:{texto:"El Cristo de la Viga (finales del s. XV) es una de las tallas más antiguas y monumentales de la Semana Santa española. La Virgen del Socorro data del s. XVI. Su espectacular recogida con bengalas púrpura es uno de los momentos más visuales de toda la Semana Santa.",fundacion:"Antigua (Cristo de la Viga: finales s. XV o principios s. XVI)",imaginero:"Anónimo (Cristo de la Viga, finales s. XV o principios s. XVI); Anónimo (Virgen del Socorro, s. XVI)",dato:"El Cristo de la Viga es una de las tallas de mayor tamaño y antigüedad de toda la Semana Santa española. Su recogida con bengalas de color púrpura es uno de los momentos más espectaculares de la Semana Santa de Jerez."},
+    13:{texto:"El Cristo de la Defensión es obra del valenciano José Esteve y Bonet (1795). La Virgen de la O es de Álvarez Duarte (1971). Hermandad con mucho sabor por las calles estrechas del centro, especialmente por Carpintería Baja y Gaitán.",fundacion:"Siglo XVIII (Cristo de José Esteve y Bonet, 1795)",imaginero:"José Esteve y Bonet (Cristo de la Defensión, 1795); Luis Álvarez Duarte (Virgen de la O, 1971)",dato:""},
+    14:{texto:"Conocida como «La Amargura». El Señor de la Flagelación es del escultor genovés Baccaro (1749-50) y la Virgen de la Amargura se atribuye al jerezano Camacho de Mendoza (s. XVIII). Hermandad con un patrimonio artístico de primer nivel.",fundacion:"Antigua (Señor de la Flagelación: Jacome Baccaro, 1749-50)",imaginero:"Jacome Baccaro (Señor de la Flagelación, 1749-50); Francisco Camacho de Mendoza (Virgen de la Amargura, s. XVIII, atribución)",dato:"Conocida popularmente como «La Amargura». El Señor de la Flagelación es obra del escultor genovés Baccaro. La Virgen de la Amargura se atribuye al jerezano Camacho de Mendoza."},
+    15:{texto:"El Cristo de la Clemencia en la Traición de Judas es de Manuel Ortega Alonso (1993). La Virgen de la Salud y Esperanza es de Madroñal Valle (1999). Su paso por la estrecha calle Tornería es un momento muy recomendado del Martes Santo.",fundacion:"Finales s. XX",imaginero:"Manuel Ortega Alonso (Cristo de la Clemencia, 1993); Salvador Madroñal Valle (Virgen de la Salud y Esperanza, 1999)",dato:""},
+    16:{texto:"El Cristo del Amor es de Ramón Chaveli Carreres (1939). La recogida por la calle Francos, estrecha y empedrada, de madrugada, es uno de los momentos más íntimos y recomendados del Martes Santo jerezano.",fundacion:"1939 (Cristo del Amor de Ramón Chaveli Carreres)",imaginero:"Ramón Chaveli Carreres (Cristo del Amor, 1939); Antonio Eslava Rubio (Magdalena, 1957; Jesús Cautivo, 1969)",dato:""},
+    17:{texto:"Los populares «judíos» del misterio (Chaveli, 1939-40), con «El Bizco» y «El Verruga», son figuras icónicas. El Señor de las Penas y la Virgen del Desconsuelo son de Ignacio López (1712-13). La recogida en San Lucas con saetas desde el balcón es el momento del Martes Santo.",fundacion:"Antigua (Señor de las Penas: Ignacio López, 1713; Virgen del Desconsuelo: Ignacio López, 1712)",imaginero:"Ignacio López (Señor de las Penas, 1713; Virgen del Desconsuelo, 1712); Ramón Chaveli Carreres (figuras de judíos, 1939-1940, incluidos «El Bizco de San Mateo» y «El Verruga»)",dato:"Los «judíos» del paso de misterio (tallados por Chaveli en 1939-40) son figuras enormemente populares. La recogida en la plaza de San Lucas, con las saetas del concurso de la Peña Buena Gente desde el balcón, es el momento cumbre del Martes Santo."},
+    18:{texto:"El Cristo de las Tres Caídas es de Chaveli Carreres (1940). La Dolorosa, del círculo de Maggio (s. XVII-XVIII), fue cedida por la Hermandad del Nazareno en 1941. Conserva la tradición del «Miserere» cantado por escolanía. En 2026 sale desde San Miguel por obras en San Lucas.",fundacion:"1940 (reorganizada; imagen del Cristo: Ramón Chaveli Carreres, 1940; Dolorosa cedida por el Nazareno en 1941)",imaginero:"Ramón Chaveli Carreres (Cristo de las Tres Caídas, 1940); círculo de Francesco María Maggio (Virgen de los Dolores, finales s. XVII-principios s. XVIII, cedida por la Hermandad del Nazareno en 1941)",dato:"La Dolorosa fue cedida por la Hermandad del Nazareno. La cofradía conserva la tradición del canto del «Miserere» por una escolanía. En 2026 sale por primera vez desde San Miguel."},
+    19:{texto:"Sale del barrio de Santiago, cuna del flamenco, y es la cofradía que más saetas espontáneas recibe. El Cristo del Prendimiento se atribuye a Camacho de Mendoza (s. XVIII). Su recorrido desde Santiago hasta la calle Ancha es uno de los más emocionantes del Miércoles Santo.",fundacion:"Antigua (Cristo del Prendimiento: Francisco Camacho de Mendoza, primera mitad s. XVIII)",imaginero:"Francisco Camacho de Mendoza (Cristo del Prendimiento, s. XVIII, atribución); Anónimo, escuela valenciana (Virgen del Desamparo, s. XIX, remodelada por Sebastián Santos en 1964)",dato:"Sale del barrio de Santiago, considerado una de las cunas del flamenco, y es una de las cofradías que más saetas espontáneas recibe. La trompeta que anuncia las saetas es una de las tradiciones del Miércoles Santo."},
+    20:{texto:"El conjunto escultórico de Vassallo Parodi (1943) y el extraordinario paso tallado por Guzmán Bejarano (Primer Premio Nacional de Talla, 1967) hacen de esta cofradía una joya artística. La Virgen de la Confortación data del s. XVII. En 2026 vuelve por Bizcocheros.",fundacion:"Antigua (reorganizada; Cristo: Juan Luis Vassallo Parodi, 1943)",imaginero:"Juan Luis Vassallo Parodi (Cristo Orando y Ángel Confortador, 1943); Jacinto Pimentel (Virgen de la Confortación, primera mitad s. XVII); Luisa Roldán «La Roldana» (Ángel Confortador antiguo, atribución)",dato:"El paso de misterio, tallado por Manuel Guzmán Bejarano, obtuvo el Primer Premio Nacional de Talla en 1967. La Virgen de la Confortación (s. XVII) es una de las dolorosas más antiguas de Jerez. En 2026 recupera el itinerario por Bizcocheros."},
+    21:{texto:"Conserva la «trompeta saetera», tradición única en toda España que avisa de la presencia del saetero. La Virgen del Mayor Dolor es obra de Ignacio López (h. 1718). El momento de la saeta desde el Casino Jerezano en la calle Lancería es imprescindible.",fundacion:"Antigua (Virgen del Mayor Dolor e imaginería: Ignacio López, h. 1718)",imaginero:"Ignacio López (Virgen del Mayor Dolor y San Bartolomé, h. 1718)",dato:"Conserva la «trompeta saetera», vestigio del antiguo toque de corneta para avisar de la presencia de un saetero. Es una tradición exclusiva de esta hermandad que no existe en ninguna otra Semana Santa de España."},
+    22:{texto:"El Cristo de la Lanzada se atribuye al imaginero jerezano Camacho de Mendoza (s. XVIII). Procesiona el Miércoles Santo desde San Miguel, uno de los templos más emblemáticos de Jerez.",fundacion:"Antigua (Cristo de la Lanzada: Francisco Camacho de Mendoza, primera mitad s. XVIII)",imaginero:"Francisco Camacho de Mendoza (Cristo de la Lanzada, s. XVIII, atribución)",dato:""},
+    23:{texto:"El Señor del Soberano Poder ante Caifás es de Ramos Corona (1999) y la Virgen de las Mercedes de Romero Zafra (2011). Procesiona desde la Basílica de Santa María de la Asunción.",fundacion:"Finales s. XX",imaginero:"Manuel Ramos Corona (Jesús del Soberano Poder ante Caifás, 1999; figuras secundarias, 2003-2006); Francisco Romero Zafra (Virgen de las Mercedes, 2011)",dato:""},
+    24:{texto:"Hermandad joven con imágenes del jerezano Alejandro Oliveras de Perea. El Cristo de la Salvación (2008) y la Virgen de las Bienaventuranzas (2013) son de nueva factura. Sale de la Parroquia del Perpetuo Socorro.",fundacion:"Principios del s. XXI",imaginero:"Alejandro Oliveras de Perea (Cristo de la Salvación, 2008; Virgen de las Bienaventuranzas, 2013)",dato:""},
+    25:{texto:"Conocida como «Las Viñas». La Virgen de la Concepción fue coronada canónicamente en 2004. El Cristo de la Exaltación es de González Rey (1991). Su regreso cruzando el puente hacia su barrio, con los vecinos esperando, es muy emotivo.",fundacion:"Mediados s. XX",imaginero:"Luis González Rey (Cristo de la Exaltación, 1991); Fernando Aguado (figuras secundarias, 2008-2013); Manuel Prieto Fernández (Virgen de la Concepción Coronada, coronada canónicamente en 2004)",dato:"La Virgen de la Concepción fue coronada canónicamente el 8 de diciembre de 2004. Conocida popularmente como «Las Viñas» por su vinculación con el barrio vitícola."},
+    26:{texto:"Reorganizada en 1938, el Crucificado de la Esperanza (primera mitad del s. XVII) se atribuye al círculo de Juan de Mesa. Su avance por San Juan de los Caballeros el Jueves Santo es una de las estampas más icónicas de la jornada.",fundacion:"Antigua (reorganizada en 1938; Cristo de la Esperanza: primera mitad s. XVII)",imaginero:"Anónimo (Cristo de la Esperanza, primera mitad s. XVII, constancia en 1632, atribuido al círculo de Juan de Mesa)",dato:""},
+    27:{texto:"El Cristo de la Humildad y Paciencia, de Francisco de Villegas (1621-22), es una de las tallas más antiguas de la Semana Santa jerezana. Cofradía con profundo arraigo histórico.",fundacion:"Antigua (Cristo de la Humildad y Paciencia: Francisco de Villegas, 1621-22)",imaginero:"Francisco de Villegas (Cristo de la Humildad y Paciencia, 1621-22)",dato:""},
+    28:{texto:"Fundada en 1984 con imágenes de González Ventura. El Cristo de la Redención y la Virgen Madre de la Iglesia procesionan el Jueves Santo desde San Lucas.",fundacion:"1984",imaginero:"Juan Antonio González Ventura (Cristo de la Redención, 1984; Virgen Madre de la Iglesia, 1996)",dato:""},
+    29:{texto:"Abre la Madrugá en absoluto silencio, sin música. El Santo Crucifijo de la Salud es obra del flamenco José de Arce (s. XVII), una de las joyas de la imaginería barroca en Andalucía. La Virgen de la Encarnación es de Castillo Lastrucci (1929). Procesión sobrecogedora.",fundacion:"Antigua (Santo Crucifijo de la Salud: José de Arce, s. XVII)",imaginero:"José de Arce (Santo Crucifijo de la Salud, s. XVII); Antonio Castillo Lastrucci (Virgen de la Encarnación, 1929)",dato:"Abre la Madrugá. Procesiona en absoluto silencio, sin acompañamiento musical. El Santo Crucifijo de la Salud, de José de Arce, es una de las joyas de la imaginería barroca flamenca en Andalucía."},
+    30:{texto:"Segunda cofradía de silencio de la Madrugá, procesiona sin música. El Cristo del Vía-Crucis es de Chaveli Carreres (1940). Sale del Convento de San Francisco en un ambiente de máximo recogimiento.",fundacion:"1940 (Cristo del Vía-Crucis: Ramón Chaveli Carreres, 1940)",imaginero:"Ramón Chaveli Carreres (Cristo del Vía-Crucis, 1940)",dato:"Segunda cofradía de silencio de la Madrugá. Procesiona sin acompañamiento musical."},
+    31:{texto:"Fundada por los toneleros hacia 1585, es la cofradía más tradicional de Jerez. Procesiona con túnica «a la egipcia» (sin antifaz) y pasos con horquillas, como hace más de 400 años. El Nazareno (anónimo, s. XVI-XVII) porta la célebre «túnica de las avefrías» bordada en oro. Su paso por la calle Ancha en la Madrugá es el momento más esperado del año.",fundacion:"Finales del s. XVI (primeras reglas: 1585; fusión con cofradía de Jesús Nazareno entre 1607 y 1621)",imaginero:"Anónimo (Jesús Nazareno, finales s. XVI-principios s. XVII); Anónimo (San Juan, s. XVII); Pablo Rosich Serra (Virgen del Traspaso, s. XIX, atribución)",dato:"Fundada por el gremio de toneleros bajo la advocación de San Andrés. Es la cofradía más tradicional de Jerez: procesiona con túnica «a la egipcia» (sin antifaz), pasos con horquillas, y tres pasos (incluido San Juan). El paso del Nazareno por la calle Ancha en la Madrugá es el momento más esperado del año. Posee un pergamino del Papa Inocencio XII (s. XV) que podría confirmar una antigüedad aún mayor. La famosa «túnica de las avefrías» está bordada en oro y costó 10.000 reales de vellón. Fue pionera en incluir mujeres como hermanas de pleno derecho."},
+    32:{texto:"Cofradía de silencio de la Madrugá. El Cristo de la Buena Muerte y la Virgen del Dulce Nombre son de Castillo Lastrucci (1958 y 1964). Su bajada por la calle Ancha al amanecer, con las primeras luces del día, es un momento mágico e irrepetible.",fundacion:"1958 (Cristo de la Buena Muerte: Antonio Castillo Lastrucci, 1958)",imaginero:"Antonio Castillo Lastrucci (Cristo de la Buena Muerte, 1958; Virgen del Dulce Nombre, 1964)",dato:"Procesiona en silencio durante la Madrugá. Su paso por la calle Ancha al amanecer, con la luz del alba, es uno de los momentos más mágicos de la Semana Santa."},
+    33:{texto:"Cofradía de la Madrugá muy querida en La Plazuela. La Virgen de la Esperanza Coronada (s. XVIII) fue adquirida en 1928. El Cristo de la Sentencia es de Carmelo Vicent Suria (1948). El Viernes Santo recibe la visita de la Expiración, momento muy emotivo.",fundacion:"Antigua (Virgen de la Esperanza: primera mitad s. XVIII; Cristo de la Sentencia: Carmelo Vicent Suria, 1948)",imaginero:"Carmelo Vicent Suria (Cristo de la Sentencia, 1948); Anónimo (Virgen de la Esperanza Coronada, primera mitad s. XVIII, adquirida en 1928); Navarro Arteaga (figuras secundarias, 2005)",dato:"Hermandad muy querida en su barrio de La Plazuela. La Virgen de la Esperanza, del s. XVIII, fue originalmente Virgen de los Dolores de una hermandad extinta. El Viernes Santo, la Hermandad de la Expiración visita a la Yedra en La Plazuela."},
+    34:{texto:"Hermandad joven que cierra la Madrugá. El Cristo de la Misión Redentora es de Murciano Abad (2011) y la Virgen del Encuentro (2018) del mismo autor. Procesiona desde el barrio de Picadueñas.",fundacion:"Principios del s. XXI",imaginero:"Fernando Murciano Abad (Cristo de la Misión Redentora, 2011; Virgen del Encuentro, 2018); Ángel Pantoja Carrasco (Virgen del Silencio, 2009)",dato:""},
+    35:{texto:"Procesiona el Viernes Santo desde San Pedro. La Virgen de Loreto se atribuye a Juan de Astorga (s. XIX). Cofradía con sabor tradicional en su paso por el barrio de San Pedro.",fundacion:"Antigua (Virgen de Loreto: Juan de Astorga, primera mitad s. XIX, atribución)",imaginero:"Juan de Astorga (Virgen de Loreto, s. XIX, atribución)",dato:""},
+    36:{texto:"Hermandad del barrio de Las Viñas. La Virgen de la Concepción fue coronada canónicamente en 2004. Su regreso cruzando el puente hacia el barrio, donde los vecinos esperan, y su paso por Tornería son momentos muy recomendados del Viernes Santo.",fundacion:"Mediados s. XX",imaginero:"Luis González Rey (Cristo de la Exaltación, 1991); Manuel Prieto Fernández (Virgen de la Concepción Coronada); Francisco Pinto Berraquero (cuatro sayones, 1984); Fernando Aguado (figuras secundarias, 2008-2013)",dato:"La Virgen de la Concepción fue coronada canónicamente en 2004. Su regreso cruzando el puente hacia su barrio, con los vecinos esperando, es un momento muy popular."},
+    37:{texto:"Fundada en 1575, junto con el Nazareno es la única que mantiene los viejos estilos procesionales de hace 400 años: túnica «a la egipcia», sin antifaz, y pasos con horquillas. El Cristo de la Expiración es de Vassallo Parodi (1950). En 2026 recupera el paso por San Miguel.",fundacion:"1575 (primeras reglas aprobadas en 1588)",imaginero:"Juan Luis Vassallo Parodi (Cristo de la Expiración, 1950)",dato:"Fundada en 1575, es una de las hermandades más antiguas de Jerez. Junto con el Nazareno, mantiene los «viejos estilos procesionales»: túnica «a la egipcia» (sin antifaz), pasos con horquillas, y procesión de San Juan como tercer paso. En 2026 recupera su recorrido por San Miguel tras el derrumbe de 2025."},
+    38:{texto:"El monumental misterio del Descendimiento de Ortega Bru (1950-57) es una de las obras cumbres de la imaginería jerezana del s. XX. Las saetas durante su recogida por Porvera, especialmente desde el nº 57, son un momento señalado del Viernes Santo.",fundacion:"Antigua (Misterio del Descendimiento: Luis Ortega Bru, 1950-57)",imaginero:"Luis Ortega Bru (Misterio del Sagrado Descendimiento, 1950-57)",dato:"El monumental misterio del Descendimiento es la gran obra de Ortega Bru, compuesto entre 1950 y 1957. Las saetas durante su recogida por Porvera son un momento señalado."},
+    39:{texto:"Fundada en 1962, con un completo conjunto escultórico de Eslava Rubio. Novedad 2026: se incorpora al Sábado Santo. Verla salir por el barrio de San Mateo tiene «todo el sabor del intramuros» jerezano. Saeta en la recogida en la plaza de San Mateo.",fundacion:"1962",imaginero:"Antonio Eslava Rubio (Cristo de la Caridad, 1962; Santa Marta, Magdalena, Santos Varones, 1962-1963; Virgen de Penas y Lágrimas, 1969); Francisco Pinto Berraquero (Virgen del Patrocinio, 1959)",dato:"Novedad 2026: entra en la jornada del Sábado Santo. Verla salir por el barrio de San Mateo «es una estampa de otro tiempo, con todo el sabor del intramuros»."},
+    40:{texto:"Hermandad sacramental con sede en la emblemática Parroquia de Santiago, en pleno corazón del barrio flamenco. Procesiona el Sábado Santo.",fundacion:"Antigua",imaginero:"",dato:""},
+    41:{texto:"Representa el Santo Entierro con el Cristo de la Mortaja (Bejarano Moreno, 2001). La Virgen Reina de los Ángeles se atribuye a Astorga (s. XIX). La salida desde el Convento de Capuchinos es de una solemnidad especial.",fundacion:"2001 (Cristo de la Mortaja: Miguel Bejarano Moreno, 2001)",imaginero:"Miguel Bejarano Moreno (Cristo de la Sagrada Mortaja, 2001); Juan de Astorga (Virgen Reina de los Ángeles, s. XIX, atribución)",dato:"Representa el Santo Entierro. La salida desde el Convento de Capuchinos tiene un marco solemne perfecto."},
+    42:{texto:"Cofradía ligada a los frailes mercedarios desde el s. XVI. La Virgen de la Piedad, San Juan y las Tres Marías son de Ignacio López (1718). El Cristo Yacente procesiona con la molía jerezana tradicional. Cierra la jornada del Sábado Santo.",fundacion:"Antigua (ligada a los frailes mercedarios desde el s. XVI)",imaginero:"Ignacio López (Virgen de la Piedad, San Juan y las Tres Marías, 1718)",dato:"Ligada a los mercedarios desde el s. XVI. El Cristo Yacente procesiona con molía jerezana, la herramienta de carga tradicional de Jerez. La igualá de sus costaleros es un acto de gran significado espiritual."},
+    43:{texto:"Hermandad joven. El Señor de Bondad y Misericordia es de Ana Rey y Ángel Pantoja (2013). La Virgen Salud de los Enfermos (Ana Rey, 2022) es una de las imágenes más recientes de la Semana Santa jerezana.",fundacion:"Principios s. XXI",imaginero:"Ana Rey y Ángel Pantoja (Señor de Bondad y Misericordia, 2013; Virgen Salud de los Enfermos, 2022, obra de Ana Rey)",dato:""},
+    44:{texto:"Fundada en 1986 con imágenes del jerezano Ramírez Pazos. El Señor del Amparo (2003) y la Virgen del Consuelo procesionan desde el barrio de Las Viñas.",fundacion:"1986",imaginero:"Pedro Ramírez Pazos (Virgen del Consuelo, 1986; Señor del Amparo, 2003)",dato:""},
+    45:{texto:"Hermandad joven del barrio de San Rafael. El Cristo de la Salud es obra de Fernando Aguado (2012).",fundacion:"Principios s. XXI",imaginero:"Fernando Aguado (Cristo de la Salud, 2012)",dato:""},
+    46:{texto:"Cierra la Semana Santa de Jerez con una procesión gloriosa de mañana. El Resucitado es de González Rey (1989). Novedad histórica 2026: sale por primera vez desde San Miguel. Jornada festiva y luminosa, de 10:30 a 14:30.",fundacion:"1989",imaginero:"Luis González Rey (Resucitado, 1989)",dato:"Cierra la Semana Santa con una procesión gloriosa de mañana. En 2026, novedad histórica: sale por primera vez desde San Miguel, procesionando en el paso del Señor Caído."}
 };
 
 // ============================
@@ -4148,9 +4324,434 @@ function playYouTube(card, e) {
         'encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
 }
 
+
+// ============================
+// DÓNDE VER DATA
+// ============================
+const DONDE_VER = {
+    fijos: [
+        {lugar:"Plaza del Aladro",desc:"Punto de acceso a la Carrera Oficial. Las cofradías piden la venia aquí. Momento solemne.",tip:"Llegar 30 min antes de la primera hermandad. La calle Eguiluz y Sevilla tienen buena visibilidad libre.",icon:"fa-flag",coords:[36.6858,-6.1377]},
+        {lugar:"Alameda Cristina / Calle Larga",desc:"Zonas más amplias de la Carrera Oficial, con mejor visibilidad libre sin palco.",tip:"Buen punto para familias: espacio amplio, cerca de bares y servicios.",icon:"fa-street-view",coords:[36.6855,-6.1365]},
+        {lugar:"Calle Tornería / Pl. Rafael Rivero",desc:"Calle estrecha del retorno. Los pasos pasan tan cerca que puedes tocar los faldones. Sonido amplificado.",tip:"No apto para claustrofóbicos en jornadas grandes. Busca hueco pegado a una fachada.",icon:"fa-compress-arrows-alt",coords:[36.6862,-6.1352]},
+        {lugar:"Plaza del Arenal",desc:"Confluencia de público en espacio amplio. Gran ambiente. Punto clásico de la Carrera Oficial.",icon:"fa-users",coords:[36.6828,-6.1373]},
+        {lugar:"Calle Carpintería Baja",desc:"Calle estrecha del retorno. Menos masificada que Tornería. Pasos rozando las paredes.",icon:"fa-compress-arrows-alt",coords:[36.6872,-6.1342]}
+    ],
+    dias: {
+        "sabado-pasion": {
+            titulo:"Sábado de Pasión — 28 marzo",
+            sub:"La Entrega · Jornada más larga (15+ horas)",
+            momentos:[
+                {lugar:"Parroquia San Enrique (Guadalcacín)",hora:"12:15",desc:"Salida de La Entrega. Arranca la jornada más larga de la Semana Santa.",why:"Muy emotiva: la hermandad recorre kilómetros para llegar a Jerez.",icon:"fa-church",hermandad:"La Entrega"},
+                {lugar:"Pl. del Caballo / Av. Álvaro Domecq",hora:"~16:30",desc:"La Entrega entra en el casco urbano.",why:"La cofradía, tras horas de camino, entra en la ciudad. Plaza amplia.",icon:"fa-map-marker-alt",hermandad:"La Entrega"},
+                {lugar:"Plaza de San Marcos",hora:"~19:00",desc:"Estación de penitencia en San Marcos.",why:"Plaza íntima, paso muy de cerca.",icon:"fa-church",hermandad:"La Entrega"}
+            ],
+            tip:"Jornada de fondo. El cambio al horario de verano (esa noche) añade 1 hora. Calzado cómodo y agua."
+        },
+        "domingo-ramos": {
+            titulo:"Domingo de Ramos — 29 marzo",
+            sub:"Borriquita · Coronación · Pasión · Transporte · Perdón · Angustias",
+            momentos:[
+                {lugar:"Pl. San Marcos → Pl. Rafael Rivero",hora:"16:30",desc:"Salida de la Borriquita. Abre la Semana Santa.",why:"Ambiente infantil, alegre, ideal para familias.",icon:"fa-child",hermandad:"La Estrella (Borriquita)"},
+                {lugar:"Alameda Cristina",hora:"~17:00",desc:"Borriquita por la Alameda.",why:"Espacio amplio y luminoso. Estampa festiva con sol de primavera.",icon:"fa-sun",hermandad:"La Estrella (Borriquita)"},
+                {lugar:"Pl. del Caballo → calle Merced",hora:"~17:20",desc:"★ Centuria Romana del Transporte a caballo.",why:"MOMENTO ÚNICO. Desfile ecuestre. La Merced y Plaza Santiago para verlo con perspectiva.",icon:"fa-horse",hermandad:"El Transporte",star:true},
+                {lugar:"Calle Ancha",hora:"~17:30",desc:"El Transporte bajando la calle Ancha hacia Carrera Oficial.",why:"La cofradía más espectacular del domingo, con su Centuria.",icon:"fa-route",hermandad:"El Transporte"},
+                {lugar:"Calle Bizcocheros",hora:"~23:30",desc:"Recogida de la Coronación.",why:"Ambiente nocturno, palio muy cerca. Recomendado por cofrades locales.",icon:"fa-moon",hermandad:"La Coronación"},
+                {lugar:"Alameda Vieja",hora:"~00:00",desc:"Las Angustias con escolanía.",why:"Un solo paso, la Virgen con canto litúrgico. Recogimiento total.",icon:"fa-praying-hands",hermandad:"Las Angustias"}
+            ],
+            tip:"Jornada con más cambios en 2026. Si vas con niños, la Borriquita (16:30-18:00) es perfecta."
+        },
+        "lunes-santo": {
+            titulo:"Lunes Santo — 30 marzo",
+            sub:"Cristo de la Sed · Candelaria · Sagrada Cena · Vera Cruz · Viga",
+            momentos:[
+                {lugar:"Pl. San Marcos y entorno",hora:"Desde 17:00",desc:"Sagrada Cena por su barrio de San Marcos.",why:"Barrio con iglesia mudéjar, marco incomparable.",icon:"fa-church",hermandad:"La Cena"},
+                {lugar:"Pl. Melgarejo → calle San Juan",hora:"~18:00",desc:"★ Cruz de Guía de la Vera Cruz sobre andas.",why:"Estilo medieval único en España. Pieza histórica de los primeros Vía Crucis.",icon:"fa-cross",hermandad:"Vera Cruz",star:true},
+                {lugar:"Entorno de su templo",hora:"Madrugada",desc:"★ Recogida de la Viga con bengalas púrpura.",why:"ESPECTACULAR. Bengalas de color púrpura iluminan la noche. Momento único.",icon:"fa-fire",hermandad:"La Viga",star:true}
+            ],
+            tip:"Jornada tranquila, ideal para moverse por los barrios y ver cofradías en su entorno natural."
+        },
+        "martes-santo": {
+            titulo:"Martes Santo — 31 marzo",
+            sub:"Defensión · Flagelación · Clemencia · Amor · Judíos de San Mateo",
+            momentos:[
+                {lugar:"Calle Francos",hora:"Madrugada",desc:"El Amor regresando a su capilla.",why:"Calle estrecha y empedrada. Gran intimidad. Recomendado por locales.",icon:"fa-heart",hermandad:"El Amor"},
+                {lugar:"Plaza de San Lucas",hora:"Madrugada",desc:"★★★ Recogida de los Judíos de San Mateo.",why:"EL MOMENTO DEL MARTES. Saetas desde el balcón del colegio San Juan de Dios (concurso Peña Buena Gente). Imprescindible.",icon:"fa-microphone",hermandad:"Judíos de San Mateo",star:true}
+            ],
+            tip:"El punto álgido es de madrugada. La recogida en San Lucas es uno de los secretos mejor guardados."
+        },
+        "miercoles-santo": {
+            titulo:"Miércoles Santo — 1 abril",
+            sub:"Tres Caídas · Prendimiento · Oración · Mayor Dolor · Lanzada · Soberano Poder",
+            momentos:[
+                {lugar:"Iglesia de San Miguel",hora:"17:00",desc:"Tres Caídas sale desde San Miguel (novedad 2026 por obras).",why:"Cambio histórico. Itinerario nuevo por Santa Cecilia y Guarnidos.",icon:"fa-exchange-alt",hermandad:"Tres Caídas"},
+                {lugar:"Barrio de Santiago",hora:"~18:50",desc:"★ Salida del Prendimiento. Zona de saetas espontáneas.",why:"Santiago es cuna del flamenco jerezano. Saetas desde cualquier balcón.",icon:"fa-microphone",hermandad:"El Prendimiento",star:true},
+                {lugar:"Entorno de San Dionisio",hora:"~22:00",desc:"★★ Trompeta saetera del Mayor Dolor.",why:"EXCLUSIVO DE JEREZ. Vestigio del antiguo toque para avisar al saetero. No existe en ninguna otra Semana Santa.",icon:"fa-trumpet",hermandad:"Mayor Dolor",star:true},
+                {lugar:"Calle Lancería (Casino Jerezano)",hora:"~22:40",desc:"Saeta al Mayor Dolor desde el balcón del Casino.",why:"Punto clásico de saetas. El casino, iluminado, enmarca el momento.",icon:"fa-microphone",hermandad:"Mayor Dolor"}
+            ],
+            tip:"La noche de las saetas por excelencia. Santiago y Lancería son los enclaves principales."
+        },
+        "jueves-santo": {
+            titulo:"Jueves Santo — 2 abril",
+            sub:"Cena · Exaltación · Salvación · Esperanza · Oración en el Huerto",
+            momentos:[
+                {lugar:"Calle San Juan de los Caballeros",hora:"Tarde-noche",desc:"Crucificado de la Esperanza por la calle noble.",why:"Estampa icónica del Jueves Santo jerezano.",icon:"fa-church",hermandad:"Humildad y Paciencia"},
+                {lugar:"Calle Bizcocheros",hora:"Ida a C.O.",desc:"Oración en el Huerto por Bizcocheros (novedad 2026).",why:"Recupera itinerario histórico. Calle de gran sabor cofrade.",icon:"fa-route",hermandad:"Oración en el Huerto"},
+                {lugar:"Centro histórico",hora:"A partir de 22:00",desc:"Ambiente general. Antesala de la Madrugá.",why:"Las calles se llenan preparándose para la gran noche.",icon:"fa-users"}
+            ],
+            tip:"Antesala de la Madrugá. Muchos se quedan en la calle esperando. Cena pronto, lleva abrigo."
+        },
+        "madruga": {
+            titulo:"La Madrugá — Noche del 2 al 3 abril",
+            sub:"★ LA NOCHE MÁS SOLEMNE. El Silencio · Cinco Llagas · Nazareno · Buena Muerte · Yedra · Misión",
+            momentos:[
+                {lugar:"San Miguel → Pl. Esteve",hora:"~01:45",desc:"★ Salida del Santo Crucifijo (El Silencio).",why:"SILENCIO ABSOLUTO. Sin música, sin aplausos. Solo los pasos de los costaleros. Sobrecogedora.",icon:"fa-volume-mute",hermandad:"El Silencio (Santo Crucifijo)",star:true},
+                {lugar:"Convento de San Francisco",hora:"~02:30",desc:"Salida de las Cinco Llagas.",why:"Segunda cofradía de silencio. Recogimiento extraordinario.",icon:"fa-volume-mute",hermandad:"Cinco Llagas"},
+                {lugar:"San Juan de Letrán → Alameda Cristina",hora:"03:30",desc:"Salida del Nazareno (15 min antes en 2026).",why:"Ya congrega multitudes desde la Alameda.",icon:"fa-walking",hermandad:"El Nazareno"},
+                {lugar:"CALLE ANCHA",hora:"~05:00",desc:"★★★ EL NAZARENO POR LA CALLE ANCHA.",why:"EL MOMENTO. Tradición secular. Miles de jerezanos. Túnica «a la egipcia», horquillas. La imagen más poderosa de la Semana Santa de Jerez.",icon:"fa-star",hermandad:"El Nazareno",star:true},
+                {lugar:"Calle Larga (Gallo Azul)",hora:"~05:00",desc:"El Nazareno por calle Larga.",why:"Más amplitud que la Ancha. Otro punto clásico.",icon:"fa-route",hermandad:"El Nazareno"},
+                {lugar:"Calle Ancha",hora:"~08:45",desc:"★ Buena Muerte al amanecer.",why:"Luz del alba, saetas desde balcones. Momento mágico.",icon:"fa-sun",hermandad:"Buena Muerte",star:true},
+                {lugar:"Calle Empedrada (P.F. La Bulería)",hora:"~02:00",desc:"Saeta a la Yedra.",why:"Saeta flamenca desde el balcón de la Peña La Bulería.",icon:"fa-microphone",hermandad:"La Yedra"}
+            ],
+            tip:"La calle Ancha se llena desde las 03:00. Respeta el silencio absoluto. Abrigo (8-10°C). Si solo ves un momento, que sea el Nazareno por la Ancha."
+        },
+        "viernes-santo": {
+            titulo:"Viernes Santo — 3 abril",
+            sub:"Loreto · Las Viñas · Cristo (Expiración) · La Soledad",
+            momentos:[
+                {lugar:"Entorno de San Miguel",hora:"~18:00",desc:"★ Cristo de la Expiración por San Miguel (recupera recorrido en 2026).",why:"Túnica «a la egipcia», horquillas, 400 años de tradición. Recupera su paso por el barrio.",icon:"fa-church",hermandad:"El Cristo (Expiración)",star:true},
+                {lugar:"La Plazuela",hora:"Noche",desc:"La Expiración visita a la Yedra.",why:"Uno de los momentos más emotivos del Viernes Santo.",icon:"fa-heart",hermandad:"El Cristo (Expiración)"},
+                {lugar:"Calle Lancería (Casino) / Porvera nº 57",hora:"20:00 / 01:00",desc:"Saetas a la Soledad.",why:"Dos puntos de saetas programadas. El Casino iluminado de noche.",icon:"fa-microphone",hermandad:"La Soledad"},
+                {lugar:"Calle Empedrada (La Bulería)",hora:"~01:00",desc:"Saeta al Cristo de la Expiración.",why:"Peña flamenca La Bulería. Saeta en la noche.",icon:"fa-microphone",hermandad:"El Cristo (Expiración)"}
+            ],
+            tip:"El Cristo de la Expiración es la gran cofradía: túnica a la egipcia, horquillas, San Miguel recuperado. Merece toda la tarde."
+        },
+        "sabado-santo": {
+            titulo:"Sábado Santo — 4 abril",
+            sub:"Santa Marta · Santiago · Sagrada Mortaja · La Piedad",
+            momentos:[
+                {lugar:"Barrio de San Mateo",hora:"15:45",desc:"★ Santa Marta por San Mateo.",why:"Estampa de otro tiempo. Todo el sabor del intramuros. Sale 15 min más tarde en 2026.",icon:"fa-church",hermandad:"Santa Marta",star:true},
+                {lugar:"Plaza de San Mateo",hora:"~21:20",desc:"Recogida de Santa Marta.",why:"Saeta en la recogida. Ambiente íntimo de barrio.",icon:"fa-microphone",hermandad:"Santa Marta"},
+                {lugar:"Convento de Capuchinos",hora:"17:05",desc:"Salida de la Sagrada Mortaja (10 min antes en 2026).",why:"Santo Entierro. Marco perfecto del convento.",icon:"fa-church",hermandad:"Sagrada Mortaja"}
+            ],
+            tip:"Jornada recogida, ideal para vivir Semana Santa sin multitudes. Llega con más antelación de lo habitual."
+        },
+        "domingo-resurreccion": {
+            titulo:"Domingo de Resurrección — 5 abril",
+            sub:"El Resucitado",
+            momentos:[
+                {lugar:"Parroquia de San Miguel",hora:"10:30",desc:"★ El Resucitado sale desde San Miguel (novedad histórica 2026).",why:"PRIMERA VEZ desde San Miguel. Procesión gloriosa en el paso del Señor Caído.",icon:"fa-church",hermandad:"El Resucitado",star:true}
+            ],
+            tip:"Jornada corta y matinal. Perfecta para familias y para cerrar con tono festivo."
+        }
+    },
+    top10: [
+        {texto:"El Nazareno por la calle Ancha en la Madrugá",cuando:"~05:00, noche del Jueves al Viernes",hermandad:"El Nazareno"},
+        {texto:"Recogida de los Judíos en Plaza San Lucas",cuando:"Madrugada del Martes Santo",hermandad:"Judíos de San Mateo"},
+        {texto:"La Centuria Romana del Transporte",cuando:"Domingo de Ramos, ~17:20",hermandad:"El Transporte"},
+        {texto:"Recogida de la Viga con bengalas púrpura",cuando:"Lunes Santo, madrugada",hermandad:"La Viga"},
+        {texto:"Silencio absoluto del Santo Crucifijo",cuando:"Madrugá, ~01:45",hermandad:"El Silencio (Santo Crucifijo)"},
+        {texto:"Trompeta saetera del Mayor Dolor",cuando:"Miércoles Santo, ~22:00",hermandad:"Mayor Dolor"},
+        {texto:"El Cristo de la Expiración por San Miguel",cuando:"Viernes Santo, tarde",hermandad:"El Cristo (Expiración)"},
+        {texto:"Saetas al Prendimiento en Santiago",cuando:"Miércoles Santo, ~18:50",hermandad:"El Prendimiento"},
+        {texto:"Santa Marta por el barrio de San Mateo",cuando:"Sábado Santo, ~15:45",hermandad:"Santa Marta"},
+        {texto:"Buena Muerte por la calle Ancha al amanecer",cuando:"Madrugá, ~08:45",hermandad:"Buena Muerte"}
+    ],
+    consejos: [
+        {icon:"fa-shoe-prints",texto:"Calzado cómodo. Vas a caminar y estar de pie muchas horas."},
+        {icon:"fa-tshirt",texto:"Abrigo para noche/madrugada (mínimas de 8-12°C en abril)."},
+        {icon:"fa-battery-full",texto:"Batería externa para el móvil. Agua y algo de comer."},
+        {icon:"fa-volume-mute",texto:"No aplaudir ni hablar durante las cofradías de silencio."},
+        {icon:"fa-ban",texto:"No cruzar entre los nazarenos ni cortar el cortejo."}
+    ],
+    saetas: [
+        {punto:"Barrio de Santiago",hermandad:"Prendimiento",tipo:"Espontáneas"},
+        {punto:"Calle Lancería (Casino Jerezano)",hermandad:"Mayor Dolor / Viñas / Soledad",tipo:"Desde balcón"},
+        {punto:"Calle Consistorio (Ayuntamiento)",hermandad:"Vera Cruz",tipo:"Desde balcón"},
+        {punto:"Calle Ancha",hermandad:"Prendimiento / Nazareno / Buena Muerte",tipo:"Espontáneas"},
+        {punto:"Calle Empedrada (P.F. La Bulería)",hermandad:"Yedra / Cristo Expiración",tipo:"Desde balcón"},
+        {punto:"Plaza San Lucas",hermandad:"Judíos de San Mateo",tipo:"Concurso (Peña Buena Gente)"},
+        {punto:"Plaza San Mateo",hermandad:"Santa Marta",tipo:"En recogida"}
+    ]
+};
+
+const DV_DAY_ORDER = ['top10','fijos','sabado-pasion','domingo-ramos','lunes-santo','martes-santo','miercoles-santo','jueves-santo','madruga','viernes-santo','sabado-santo','domingo-resurreccion','saetas','consejos'];
+const DV_TAB_NAMES = {'top10':'★ Top 10','fijos':'Puntos fijos','sabado-pasion':'Sáb. Pasión','domingo-ramos':'D. Ramos','lunes-santo':'Lunes','martes-santo':'Martes','miercoles-santo':'Miércoles','jueves-santo':'Jueves','madruga':'Madrugá','viernes-santo':'Viernes','sabado-santo':'Sábado','domingo-resurreccion':'D. Resurrección','saetas':'Saetas','consejos':'Consejos'};
+
+let dvCurrentTab = 'top10';
+
+function initDondeVer() {
+    var tabs = document.getElementById('dvTabs');
+    if (!tabs) return;
+    tabs.innerHTML = DV_DAY_ORDER.map(function(k) {
+        return '<button class="dv-tab' + (k === dvCurrentTab ? ' active' : '') + '" data-dv="' + k + '">' + DV_TAB_NAMES[k] + '</button>';
+    }).join('');
+    tabs.addEventListener('click', function(e) {
+        var btn = e.target.closest('.dv-tab');
+        if (!btn) return;
+        dvCurrentTab = btn.dataset.dv;
+        tabs.querySelectorAll('.dv-tab').forEach(function(t) { t.classList.remove('active'); });
+        btn.classList.add('active');
+        renderDondeVer();
+    });
+    renderDondeVer();
+}
+
+function renderDondeVer() {
+    var c = document.getElementById('dvContent');
+    if (!c) return;
+    var html = '';
+    if (dvCurrentTab === 'top10') {
+        html += '<div class="dv-top10"><h3><i class="fas fa-trophy"></i> Los 10 momentos imprescindibles</h3>';
+        DONDE_VER.top10.forEach(function(item, i) {
+            html += '<div class="dv-top10-item">' +
+                '<div class="dv-top10-num">' + (i + 1) + '</div>' +
+                '<div class="dv-top10-text"><strong>' + item.texto + '</strong><small>' + item.cuando + '</small>' +
+                (item.hermandad ? '<div style="margin-top:4px;"><span style="cursor:pointer;color:var(--accent);font-size:.85em;text-decoration:underline dotted;text-underline-offset:2px;" onclick="navigateToHermandad(\'' + item.hermandad.replace(/'/g, "\\'") + '\')"><i class="fas fa-church" style="margin-right:4px;"></i>' + item.hermandad + '</span></div>' : '') +
+                '</div></div>';
+        });
+        html += '</div>';
+        html += '<p style="text-align:center;font-size:.75em;color:var(--text-secondary);opacity:.6;margin-top:8px;"><i class="fas fa-info-circle"></i> Fuentes: Andalucía Información, La Pasión en Jerez, La Voz del Sur, Casa Palacio Ánima</p>';
+    } else if (dvCurrentTab === 'fijos') {
+        html += '<div class="dv-day-title"><i class="fas fa-map-pin"></i> Puntos que funcionan todos los días</div>';
+        DONDE_VER.fijos.forEach(function(p) {
+            html += '<div class="dv-card"><div class="dv-card-top"><div class="dv-card-icon"><i class="fas ' + p.icon + '"></i></div><div><h4>' + p.lugar + '</h4></div></div><p>' + p.desc + '</p>' +
+                (p.tip ? '<div class="dv-tip"><i class="fas fa-lightbulb"></i> ' + p.tip + '</div>' : '') +
+                (p.coords ? '<button class="btn-ver-mapa" style="margin-top:6px;font-size:.78rem;" onclick="goToMapCoords(' + p.coords[0] + ',' + p.coords[1] + ',\'' + p.lugar.replace(/'/g, "\\'") + '\')"><i class="fas fa-map-marked-alt"></i> Ver en mapa</button>' : '') +
+                '</div>';
+        });
+    } else if (dvCurrentTab === 'saetas') {
+        html += '<div class="dv-day-title"><i class="fas fa-microphone"></i> Mapa de saetas — Puntos clave</div>';
+        html += '<p style="font-size:.82em;color:var(--text-secondary);margin-bottom:10px;">Enclaves donde se programan o surgen espontáneamente saetas flamencas.</p>';
+        DONDE_VER.saetas.forEach(function(s) {
+            html += '<div class="dv-card"><div class="dv-card-top"><div class="dv-card-icon"><i class="fas fa-microphone"></i></div><div><h4>' + s.punto + ' <small>' + s.tipo + '</small></h4></div></div><p><i class="fas fa-church" style="color:var(--accent);margin-right:4px;"></i>' + s.hermandad + '</p></div>';
+        });
+    } else if (dvCurrentTab === 'consejos') {
+        html += '<div class="dv-day-title"><i class="fas fa-lightbulb"></i> Consejos prácticos</div>';
+        DONDE_VER.consejos.forEach(function(c2) {
+            html += '<div class="dv-card"><div class="dv-card-top"><div class="dv-card-icon"><i class="fas ' + c2.icon + '"></i></div><div><p style="margin:0;">' + c2.texto + '</p></div></div></div>';
+        });
+        html += '<div style="margin-top:12px;padding:12px;background:rgba(212,168,67,0.06);border-radius:10px;font-size:.82em;color:var(--text-secondary);">' +
+            '<strong style="color:var(--accent);">Movilidad 2026:</strong> Los conductores por Porvera circulan por el margen izquierdo de la Alameda. Parada de taxis de Cristina invierte sentido hacia Sevilla. Zona de Bajas Emisiones activa en el centro histórico.</div>';
+    } else if (DONDE_VER.dias[dvCurrentTab]) {
+        var dia = DONDE_VER.dias[dvCurrentTab];
+        html += '<div class="dv-day-title"><i class="fas fa-calendar-day"></i> ' + dia.titulo + '</div>';
+        html += '<p style="font-size:.82em;color:var(--text-secondary);margin-bottom:10px;">' + dia.sub + '</p>';
+        dia.momentos.forEach(function(m) {
+            html += '<div class="dv-card">' +
+                '<div class="dv-card-top"><div class="dv-card-icon"><i class="fas ' + (m.icon || 'fa-map-marker-alt') + '"></i></div>' +
+                '<div><h4>' + (m.star ? '<span class="dv-star">★</span>' : '') + m.lugar + '<small>' + m.hora + '</small></h4></div></div>' +
+                '<p><strong>' + m.desc + '</strong></p>' +
+                '<p>' + m.why + '</p>' +
+                (m.hermandad ? '<span style="cursor:pointer;color:var(--accent);font-size:.82em;text-decoration:underline dotted;text-underline-offset:2px;" onclick="navigateToHermandad(\'' + m.hermandad.replace(/'/g, "\\'") + '\')"><i class="fas fa-church" style="margin-right:4px;"></i>' + m.hermandad + '</span>' : '') +
+                '</div>';
+        });
+        if (dia.tip) {
+            html += '<div class="dv-tip" style="margin-top:8px;"><i class="fas fa-lightbulb"></i> ' + dia.tip + '</div>';
+        }
+    }
+    c.innerHTML = html;
+}
+
+function goToMapCoords(lat, lng, label) {
+    document.querySelectorAll('.view-tab').forEach(function(t) { t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
+    var mapTab = document.querySelector('[data-view="mapa"]');
+    if (mapTab) { mapTab.classList.add('active'); mapTab.setAttribute('aria-selected','true'); }
+    currentView = 'mapa';
+    document.querySelectorAll('.view-panel').forEach(function(p) { p.classList.remove('active'); });
+    document.getElementById('viewMapa').classList.add('active');
+    document.getElementById('filterChips').style.display = 'none';
+    if (!map) initMap();
+    else { map.invalidateSize(); updateMap(); }
+    setTimeout(function() {
+        if (map) {
+            map.setView([lat, lng], 17);
+            L.popup().setLatLng([lat, lng]).setContent('<div style="font-size:12px;font-weight:600;color:#1a0a2e;">' + label + '</div>').openOn(map);
+        }
+    }, 350);
+}
+
+// ============================
+// GLOSARIO DATA
+// ============================
+const GLOSARIO = [
+    {t:"Aguaó / Aguador",d:"Persona que lleva un cántaro con agua para dar de beber a los costaleros durante la procesión. Figura tradicional imprescindible en las largas chicotás jerezanas."},
+    {t:"Aladro (Plaza del)",d:"Plaza del centro histórico que marca el acceso a la Carrera Oficial. Todas las hermandades pasan por aquí antes de iniciar su estación de penitencia hacia la Catedral. La hora del «Aladro» indica cuándo entrará la cofradía en Carrera Oficial.",jerez:true},
+    {t:"Alamares",d:"Cordones, galones y flecos de oro, plata o hilo metálico que penden de la caída del palio. Elementos decorativos de gran valor artístico."},
+    {t:"Alzacola",d:"Armazón que se coloca detrás de la cabeza de la Virgen hasta la cola del paso de palio, para que el manto se aprecie en toda su extensión."},
+    {t:"Antifaz",d:"Pieza de tela que cubre el rostro del nazareno dejando solo los ojos visibles. En Jerez, El Nazareno y La Expiración procesionan sin antifaz (túnica «a la egipcia»)."},
+    {t:"Bambalinas",d:"Piezas de tela bordada que penden del techo del palio a modo de cortinas. En Jerez, muchas están bordadas en oro sobre terciopelo y son piezas extraordinarias."},
+    {t:"Banda de Cornetas y Tambores (BCT)",d:"Formación musical con cornetas y tambores que acompaña pasos de misterio. Sonido marcial y solemne. Destaca la BCT del Cristo de la Caridad – Santa Marta, banda titular de Jerez.",jerez:true},
+    {t:"Banda de Música (BM)",d:"Formación con instrumentación completa (viento madera, metal y percusión) que acompaña habitualmente pasos de palio con marchas melódicas y solemnes."},
+    {t:"Besamanos / Besapiés",d:"Actos de culto en Cuaresma donde los fieles besan la mano de la Virgen o los pies de Cristo. Preludio de la Semana Santa."},
+    {t:"Capataz",d:"Persona que dirige a los costaleros desde fuera del paso, dando órdenes de levantada, andada, parada y recogida mediante golpes con el llamador o con la voz. En Jerez, figura de enorme prestigio.",jerez:true},
+    {t:"Capilla musical / Escolanía",d:"Coro de voces que acompaña hermandades interpretando cantos litúrgicos. Las Angustias tiene escolanía y Las Tres Caídas conserva el canto del «Miserere»."},
+    {t:"Capirote",d:"Cucurucho de cartón forrado de tela que da forma al antifaz puntiagudo del nazareno. Elemento más reconocible del atuendo nazareno."},
+    {t:"Carrera Oficial",d:"Recorrido común que todas las hermandades siguen para hacer estación de penitencia a la Catedral. La de Jerez (1,3 km, del Aladro a la Catedral) es la más extensa de España.",jerez:true},
+    {t:"Chicotá",d:"Tramo que los costaleros realizan sin detenerse, desde que levantan hasta que paran. Las chicotás más celebradas se hacen al son de una marcha significativa."},
+    {t:"Cirio / Cirial",d:"Vela grande de cera que portan los nazarenos de luz. El cirial es el soporte metálico, normalmente de plata, donde se coloca el cirio."},
+    {t:"Contraguía",d:"Persona que auxilia al capataz dirigiendo la parte trasera del paso. Esencial en pasos grandes de misterio donde el capataz no ve la cola."},
+    {t:"Costal",d:"Pieza de tela gruesa que se ajusta sobre la nuca del costalero para protegerle y repartir el peso. En Jerez convive con la molía (forma tradicional jerezana)."},
+    {t:"Costalero/a",d:"Persona que porta el paso desde debajo, oculta por los faldones. En Jerez conviven dos formas de carga: la tradicional con molía (sobre el hombro) y la sevillana con costal (sobre la nuca). ~35 kg por persona.",jerez:true},
+    {t:"Cruz de guía",d:"Cruz que abre el cortejo de cada hermandad. La de la Vera Cruz de Jerez es portada sobre andas al estilo medieval, una singularidad única.",jerez:true},
+    {t:"Cuadrilla",d:"Conjunto de costaleros que portan un paso, de 24 a más de 40 personas, organizado en filas bajo las trabajaderas y dirigido por un capataz."},
+    {t:"Demanda",d:"Pieza de orfebrería en plata con la imagen titular. Antiguamente servía para recaudar limosnas; hoy es un elemento meramente procesional."},
+    {t:"Dolorosa",d:"Imagen de la Virgen María en actitud de dolor. Jerez posee dolorosas de Sebastián Santos, Ortega Bru, Buiza y otros grandes imagineros."},
+    {t:"Ensayo",d:"Práctica de los costaleros con la estructura del paso semanas antes de Semana Santa. En Cuaresma es frecuente encontrar ensayos nocturnos por las calles de Jerez."},
+    {t:"Estación de penitencia",d:"Acto central: una hermandad recorre las calles desde su templo hasta la Catedral y regresa. 44 de las 46 hermandades de Jerez la realizan."},
+    {t:"Faldón",d:"Tela que rodea la parte inferior del paso ocultando a los costaleros. El efecto es que el paso «flota» por la calle."},
+    {t:"Hermandad / Cofradía",d:"Asociación de fieles para el culto a unas imágenes y la estación de penitencia. Jerez tiene 46 hermandades de penitencia, la ciudad con más cofradías tras Sevilla.",jerez:true},
+    {t:"Horquilla",d:"Pieza de madera o metal para sostener el paso en las paradas. En Jerez, El Nazareno y La Expiración mantienen esta tradición centenaria exclusiva.",jerez:true},
+    {t:"Horquillero",d:"Persona que coloca y retira las horquillas. Figura esencial en El Nazareno y La Expiración de Jerez.",jerez:true},
+    {t:"Igualá",d:"Acto donde los costaleros se colocan bajo las trabajaderas ajustando posición según altura. En Jerez, acto cargado de simbolismo semanas antes de Semana Santa."},
+    {t:"Imaginero",d:"Escultor de imágenes religiosas. Jerez posee obras de José de Arce, Juan de Mesa, La Roldana, Illanes, Santos Rojas, Ortega Bru y Buiza."},
+    {t:"Levantá",d:"Momento en que los costaleros levantan el paso obedeciendo al capataz. Las levantás al son de la primera nota de una marcha emblemática provocan ovación del público."},
+    {t:"Llamador",d:"Pieza metálica en la delantera del paso que el capataz golpea para dar órdenes: un golpe para levantar, dos para andar, uno para parar."},
+    {t:"Madrugá / Noche de Jesús",d:"Noche del Jueves al Viernes Santo. Seis cofradías, tres en silencio absoluto. El Nazareno por la calle Ancha es el momento más esperado del año.",jerez:true},
+    {t:"Maniguetero",d:"Persona que sujeta las maniguetas laterales del paso para ayudar a girar en esquinas estrechas. Crucial en calles como Tornería o Carpintería Baja.",jerez:true},
+    {t:"Manto",d:"Pieza de terciopelo bordado en oro que cubre la espalda de la Virgen y se extiende por la cola del paso de palio. Pueden medir varios metros."},
+    {t:"Marcha procesional",d:"Composición musical para acompañar procesiones. Las de palio son melódicas; las de Cristo, más marciales. Algunas están dedicadas a imágenes concretas de Jerez."},
+    {t:"Molía",d:"Almohadilla tradicional y exclusivamente jerezana que se coloca sobre el hombro para cargar las trabajaderas. La seña de identidad de los costaleros de Jerez, anterior al costal sevillano.",jerez:true},
+    {t:"Nazareno/a",d:"Persona que desfila con túnica y antifaz (o sin él). Pueden ser de luz (con cirio), de insignia (con estandarte) o penitentes (con cruz)."},
+    {t:"Palio",d:"Estructura con varales y techo bordado bajo la que procesiona la Virgen. Los palios jerezanos son de extraordinaria riqueza artística."},
+    {t:"Parihuela",d:"Estructura de madera (vigas y tablones) que forma el esqueleto interior del paso. Base que los costaleros cargan."},
+    {t:"Paso de misterio",d:"Paso con una escena de la Pasión (Cristo, soldados, personajes bíblicos). Acompañado generalmente por BCT o Agrupaciones Musicales."},
+    {t:"Paso de palio",d:"Paso con la Virgen Dolorosa bajo palio de varales de plata y techo bordado. Acompañado habitualmente por Bandas de Música."},
+    {t:"Permuta de paso",d:"Intercambio del orden de paso entre dos hermandades de la misma jornada. Cada vez más frecuente en Jerez por razones logísticas.",jerez:true},
+    {t:"Saeta",d:"Canto flamenco sin acompañamiento dedicado a las imágenes desde balcones o la calle. Jerez, cuna del flamenco, tiene su propio estilo de saeta con «quejío» inconfundible.",jerez:true},
+    {t:"Trabajadera",d:"Viga de madera horizontal dentro del paso donde los costaleros apoyan su molía o costal. Se disponen en paralelo; cada costalero ocupa un puesto específico."},
+    {t:"Trompeta saetera",d:"Instrumento exclusivo de la Hermandad del Mayor Dolor de Jerez. Antiguo toque de corneta para avisar de la presencia del saetero. No existe en ninguna otra Semana Santa.",jerez:true},
+    {t:"Túnica",d:"Vestimenta del nazareno. Cada hermandad tiene su propia combinación. El Nazareno y La Expiración mantienen la túnica «a la egipcia» (sin antifaz), forma centenaria."},
+    {t:"Túnica «a la egipcia»",d:"Forma exclusivamente jerezana sin capirote ni antifaz, rostro descubierto. Solo El Nazareno y La Expiración la conservan desde hace más de 400 años.",jerez:true},
+    {t:"Unión de Hermandades",d:"Órgano que agrupa a todas las hermandades de Jerez. Constituida el 21 de febrero de 1938, organiza horarios y Carrera Oficial. Sede en calle Curtidores.",jerez:true}
+];
+
+let glosExpanded = new Set();
+
+function initGlosario() {
+    var input = document.getElementById('glosSearch');
+    if (!input) return;
+    input.addEventListener('input', function() { renderGlosario(this.value); });
+    renderGlosario('');
+}
+
+function renderGlosario(filter) {
+    var c = document.getElementById('glosContent');
+    var counter = document.getElementById('glosCount');
+    if (!c) return;
+    var f = (filter || '').toLowerCase();
+    var filtered = GLOSARIO.filter(function(g) { return !f || g.t.toLowerCase().includes(f) || g.d.toLowerCase().includes(f); });
+    counter.textContent = filtered.length + ' término' + (filtered.length !== 1 ? 's' : '');
+    var html = '';
+    var currentLetter = '';
+    filtered.forEach(function(g, i) {
+        var letter = g.t.charAt(0).toUpperCase();
+        if (letter !== currentLetter) {
+            currentLetter = letter;
+            html += '<div class="glos-letter">' + letter + '</div>';
+        }
+        var isExp = glosExpanded.has(i);
+        html += '<div class="glos-item' + (isExp ? ' expanded' : '') + '" onclick="toggleGlosItem(' + i + ')">' +
+            '<div class="glos-item-header"><span class="glos-item-term">' + g.t + '</span><i class="fas fa-chevron-down glos-item-chevron"></i></div>' +
+            '<div class="glos-item-body">' + g.d +
+            (g.jerez ? '<div class="glos-jerez"><i class="fas fa-map-marker-alt"></i> Exclusivo / especial en Jerez</div>' : '') +
+            '</div></div>';
+    });
+    if (!html) html = '<p style="text-align:center;color:var(--text-secondary);padding:2rem;">No se encontraron términos</p>';
+    c.innerHTML = html;
+}
+
+function toggleGlosItem(i) {
+    if (glosExpanded.has(i)) glosExpanded.delete(i);
+    else glosExpanded.add(i);
+    renderGlosario(document.getElementById('glosSearch').value);
+}
+
+// ============================
+// GLOSARIO TOOLTIPS
+// ============================
+const GLOS_TOOLTIP_TERMS = {};
+GLOSARIO.forEach(function(g) {
+    var key = g.t.split(' / ')[0].split(' (')[0].toLowerCase();
+    GLOS_TOOLTIP_TERMS[key] = {term: g.t, def: g.d};
+});
+// Add short aliases
+GLOS_TOOLTIP_TERMS['costalero'] = GLOS_TOOLTIP_TERMS['costalero/a'];
+GLOS_TOOLTIP_TERMS['costaleros'] = GLOS_TOOLTIP_TERMS['costalero/a'];
+GLOS_TOOLTIP_TERMS['nazareno'] = GLOS_TOOLTIP_TERMS['nazareno/a'];
+GLOS_TOOLTIP_TERMS['nazarenos'] = GLOS_TOOLTIP_TERMS['nazareno/a'];
+GLOS_TOOLTIP_TERMS['madrugá'] = GLOS_TOOLTIP_TERMS['madrugá / noche de jesús'];
+GLOS_TOOLTIP_TERMS['carrera oficial'] = GLOS_TOOLTIP_TERMS['carrera oficial'];
+GLOS_TOOLTIP_TERMS['paso de misterio'] = GLOS_TOOLTIP_TERMS['paso de misterio'];
+GLOS_TOOLTIP_TERMS['paso de palio'] = GLOS_TOOLTIP_TERMS['paso de palio'];
+GLOS_TOOLTIP_TERMS['aladro'] = GLOS_TOOLTIP_TERMS['aladro'];
+GLOS_TOOLTIP_TERMS['molía'] = GLOS_TOOLTIP_TERMS['molía'];
+GLOS_TOOLTIP_TERMS['levantá'] = GLOS_TOOLTIP_TERMS['levantá'];
+GLOS_TOOLTIP_TERMS['chicotá'] = GLOS_TOOLTIP_TERMS['chicotá'];
+GLOS_TOOLTIP_TERMS['saeta'] = GLOS_TOOLTIP_TERMS['saeta'];
+GLOS_TOOLTIP_TERMS['saetas'] = GLOS_TOOLTIP_TERMS['saeta'];
+GLOS_TOOLTIP_TERMS['horquilla'] = GLOS_TOOLTIP_TERMS['horquilla'];
+GLOS_TOOLTIP_TERMS['horquillas'] = GLOS_TOOLTIP_TERMS['horquilla'];
+GLOS_TOOLTIP_TERMS['capataz'] = GLOS_TOOLTIP_TERMS['capataz'];
+GLOS_TOOLTIP_TERMS['llamador'] = GLOS_TOOLTIP_TERMS['llamador'];
+GLOS_TOOLTIP_TERMS['palio'] = GLOS_TOOLTIP_TERMS['palio'];
+GLOS_TOOLTIP_TERMS['bambalinas'] = GLOS_TOOLTIP_TERMS['bambalinas'];
+GLOS_TOOLTIP_TERMS['trabajadera'] = GLOS_TOOLTIP_TERMS['trabajadera'];
+GLOS_TOOLTIP_TERMS['trabajaderas'] = GLOS_TOOLTIP_TERMS['trabajadera'];
+GLOS_TOOLTIP_TERMS['faldón'] = GLOS_TOOLTIP_TERMS['faldón'];
+GLOS_TOOLTIP_TERMS['faldones'] = GLOS_TOOLTIP_TERMS['faldón'];
+
+var activeTooltip = null;
+document.addEventListener('click', function(e) {
+    var trigger = e.target.closest('.glos-tooltip-trigger');
+    if (trigger) {
+        e.preventDefault();
+        e.stopPropagation();
+        showGlosTooltip(trigger);
+        return;
+    }
+    if (activeTooltip && !e.target.closest('.glos-tooltip')) {
+        hideGlosTooltip();
+    }
+});
+
+function showGlosTooltip(el) {
+    hideGlosTooltip();
+    var term = el.dataset.glossTerm;
+    var entry = GLOS_TOOLTIP_TERMS[term];
+    if (!entry) return;
+    var tip = document.createElement('div');
+    tip.className = 'glos-tooltip';
+    tip.innerHTML = '<span class="glos-tooltip-close" onclick="hideGlosTooltip()"><i class="fas fa-times"></i></span>' +
+        '<div class="glos-tooltip-term">' + entry.term + '</div>' +
+        '<div>' + entry.def + '</div>';
+    document.body.appendChild(tip);
+    activeTooltip = tip;
+    var rect = el.getBoundingClientRect();
+    var tipH = tip.offsetHeight;
+    var top = rect.top - tipH - 8;
+    if (top < 10) top = rect.bottom + 8;
+    var left = Math.max(10, Math.min(rect.left, window.innerWidth - 290));
+    tip.style.top = top + 'px';
+    tip.style.left = left + 'px';
+}
+
+function hideGlosTooltip() {
+    if (activeTooltip) {
+        activeTooltip.remove();
+        activeTooltip = null;
+    }
+}
+
+
 /* playBandVid removed – band videos now open YouTube in new tab */
 
 </script>
-<div style="text-align:center;padding:10px 0 20px;font-size:0.7rem;color:rgba(212,168,67,0.5);letter-spacing:1px;">© JMBV_AX</div>
+<div style="text-align:center;padding:16px 0 calc(24px + 60px);">
+<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;margin-bottom:8px;">
+<span style="font-size:0.7rem;color:rgba(212,168,67,0.55);letter-spacing:0.5px;">Patrocinado por</span>
+<svg width="52" height="52" viewBox="0 0 100 100" style="filter:drop-shadow(0 2px 6px rgba(233,68,106,0.3));"><circle cx="50" cy="50" r="44" fill="none" stroke="rgba(200,211,218,0.7)" stroke-width="10"/><path d="M50 6 A44 44 0 0 1 94 50" fill="none" stroke="#e9446a" stroke-width="10" stroke-linecap="round"/><path d="M94 50 A44 44 0 0 1 50 94" fill="none" stroke="#ff6b8a" stroke-width="10" stroke-linecap="round"/><path d="M50 94 A44 44 0 0 1 6 50" fill="none" stroke="#2ab5b2" stroke-width="10" stroke-linecap="round"/><path d="M6 50 A44 44 0 0 1 50 6" fill="none" stroke="#4dd9d6" stroke-width="10" stroke-linecap="round"/><text x="50" y="60" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="28" fill="#f0e6d2">SW</text></svg>
+</div>
+<div style="font-size:0.7rem;color:rgba(212,168,67,0.5);letter-spacing:1px;">© JMBV_AX</div>
+</div>
 </body>
 </html>
